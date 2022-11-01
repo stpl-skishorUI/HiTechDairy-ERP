@@ -32,3 +32,36 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
     --main-color:rgb(68, 138, 255);
     --main-dark-color:rgb(38, 110, 230);
   }
+.text-main{
+  color: var(--main-color);
+}
+.bg-main{
+  background-color:var(--main-color);
+  color: #fff;
+}
+.btn-main{
+  background-color:var(--main-color);
+  color: #fff;
+  border:solid 1px var(--main-color);
+}
+.text-main-dark{
+  color: var(--main-dark-color);
+}
+.bg-main-dark{
+  background-color:var(--main-dark-color);
+  color: #fff;
+}
+.btn-main-dark{
+  background-color:var(--main-dark-color);
+  color: #fff;
+  border:solid 1px var(--main-dark-color);
+}
+.btn-main-dark:focus:not(:focus-visible),
+.btn-main-dark.show,
+.btn-main-dark:focus-visible,
+.btn-main-dark:active,
+.btn-main-dark:hover{
+  background-color:var(--main-dark-color);
+  color: #fff;
+  border:solid 1px var(--main-dark-color);
+}
