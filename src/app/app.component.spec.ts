@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AngularAdminTemplate'`, () => {
+  it(`should have as title 'HiTechDairy-ERP'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AngularAdminTemplate');
+    expect(app.title).toEqual('HiTechDairy-ERP');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AngularAdminTemplate app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('HiTechDairy-ERP app is running!');
   });
 });
