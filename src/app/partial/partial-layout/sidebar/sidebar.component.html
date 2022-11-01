@@ -2,31 +2,11 @@
     <div class="sidebar-content">
       <perfect-scrollbar>
         <div class="sidebar-header">
-          <a >Pro Sidebar</a>
-        </div>
-  
-        <div class="sidebar-profile">
-          <div class="user-pic">
-            <img class="img-responsive img-rounded" src="assets/images/user.jpg" alt="User picture">
-          </div>
-          <div class="user-info">
-            <span class="user-name">Jhon
-              <strong>Smith</strong>
-            </span>
-            <span class="user-role">Administrator</span>
-            <span class="user-status">
-              <i class="fa fa-circle"></i>
-              <span>Online</span>
-            </span>
-          </div>
-        </div>
-        <div class="sidebar-search">
-          <div>
-            <div class="input-group">
-              <input type="text" class="form-control search-menu" placeholder="Search...">
-              <button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
-          </div>
+          <img src="assets/images/logo.jpg">
+          <a>Dairy ERP</a>
+          <a class="btn btn-link ms-1" (click)="toggleSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
         </div>
         <div class="sidebar-menu">
           <ul>
