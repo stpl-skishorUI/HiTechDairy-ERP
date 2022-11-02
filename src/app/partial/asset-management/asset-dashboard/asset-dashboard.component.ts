@@ -137,7 +137,7 @@ const ELEMENT_DATA1: PeriodicElement1[] = [
 @Component({
   selector: 'app-assets-dashboard',
   templateUrl: './asset-dashboard.component.html',
-  styleUrls: ['./asset-dashboard.component.css'],
+  styleUrls: ['./asset-dashboard.component.scss'],
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({height: '0px', minHeight: '0'})),
