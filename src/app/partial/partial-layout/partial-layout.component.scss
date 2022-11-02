@@ -53,6 +53,8 @@
   
 .main-content{
   padding: 10px;
+  height: calc(100vh - 68px);
+  overflow-y: auto;
 }
 footer{
   position: fixed;
