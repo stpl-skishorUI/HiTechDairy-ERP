@@ -66,3 +66,91 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
   color: #fff;
   border:solid 1px var(--main-dark-color);
 }
+.plain-card,
+.dashboard-table,
+mat-label,
+.mat-input-element,
+.mat-tab-label-content{
+  font-family: 'Rubik', sans-serif !important;
+}
+.plain-card{
+  border: none;
+  border-radius: 0.375rem;
+}
+.plain-card .card-header{
+  background-color:transparent;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-bottom: 0;
+}
+.plain-card .card-body{
+  font-size: 0.85rem;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+.dashboard-table{
+  width: 100%;
+}
+.dashboard-table th{
+  background-color:#E7F7FF;
+  font-size: 0.85rem;
+}
+.dashboard-table tr.mat-row,
+.dashboard-table tr.mat-header-row{
+  height: 40px;
+}
+.table-5row-height{
+  height: 33vh;
+  overflow-y: auto;
+}
+.table-10row-height{
+  height: 62vh;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollbar {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overscroll-behavior: contain;
+  scrollbar-color: #989ea6 transparent;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+.scrollbar:hover::-webkit-scrollbar, .scrollbar:hover::-webkit-scrollbar-thumb, .scrollbar:hover:focus::-webkit-scrollbar, .scrollbar:hover:focus::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+.scrollbar::-webkit-scrollbar {
+  -webkit-appearance: none;
+  background-color: transparent;
+  height: 0.375rem;
+  visibility: hidden;
+  width: 0.375rem;
+}
+.scrollbar::-webkit-scrollbar-button, .scrollbar::-webkit-scrollbar-corner {
+  display: none;
+}
+.scrollbar::-webkit-scrollbar-button, .scrollbar::-webkit-scrollbar-corner {
+  display: none;
+}
+.scrollbar:hover::-webkit-scrollbar, .scrollbar:hover::-webkit-scrollbar-thumb, .scrollbar:hover:focus::-webkit-scrollbar, .scrollbar:hover:focus::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: hsla(214,7%,62%,.4);
+  border-radius: 3px;
+  visibility: hidden;
+}
