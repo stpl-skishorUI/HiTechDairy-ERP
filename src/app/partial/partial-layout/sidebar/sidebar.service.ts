@@ -8,138 +8,140 @@ export class SidebarService {
   _hasBackgroundImage = true;
   menus = [
     {
-      title: 'general',
+      title: 'Asset Management',
       type: 'header'
     },
     {
       title: 'Dashboard',
+      icon: 'fa fa-book',
+      active: false,
+      type: 'simple',
+      url:'./asset-dashboard'
+    },
+    {
+      title: 'Item Master',
       icon: 'fa fa-tachometer-alt',
       active: false,
       type: 'dropdown',
-      badge: {
-        text: 'New ',
-        class: 'badge-warning'
-      },
       submenus: [
         {
-          title: 'Dashboard 1',
-          badge: {
-            text: 'Pro ',
-            class: 'badge-success'
-          }
+          title: 'Group Master',
+          url:'group-master'
         },
         {
-          title: 'Dashboard 2'
+          title: 'Category Master',
+          url:'category-master'
         },
         {
-          title: 'Dashboard 3'
+          title: 'Parameter Master',
+          url:'parameter-master'
         }
       ]
     },
     {
-      title: 'E-commerce',
+      title: 'Store & Vendor Master',
       icon: 'fa fa-shopping-cart',
       active: false,
       type: 'dropdown',
-      badge: {
-        text: '3',
-        class: 'badge-danger'
-      },
       submenus: [
         {
-          title: 'Products',
+          title: 'Store Master',
+          url:'store-master'
         },
         {
-          title: 'Orders'
-        },
-        {
-          title: 'Credit cart'
+          title: 'Vendor Master',
+          url:'vendor-master'
         }
       ]
     },
     {
-      title: 'Components',
+      title: 'Manage Items',
       icon: 'far fa-gem',
       active: false,
       type: 'dropdown',
       submenus: [
         {
-          title: 'General',
+          title: 'Item Registration',
+          url:'item-registration'
         },
         {
-          title: 'Panels'
+          title: 'Item Issue/Return',
+          url:'item-issue-return'
         },
         {
-          title: 'Tables'
+          title: 'Item Transfer',
+          url:'item-transfer'
         },
         {
-          title: 'Icons'
+          title: 'Item Repair Issue/Return',
+          url:'item-repair-issue-return'
         },
         {
-          title: 'Forms'
+          title: 'Item Scrap/Donated',
+          url:'item-scrap-donated'
         }
       ]
     },
-    {
-      title: 'Charts',
-      icon: 'fa fa-chart-line',
-      active: false,
-      type: 'dropdown',
-      submenus: [
-        {
-          title: 'Pie chart',
-        },
-        {
-          title: 'Line chart'
-        },
-        {
-          title: 'Bar chart'
-        },
-        {
-          title: 'Histogram'
-        }
-      ]
-    },
-    {
-      title: 'Maps',
-      icon: 'fa fa-globe',
-      active: false,
-      type: 'dropdown',
-      submenus: [
-        {
-          title: 'Google maps',
-        },
-        {
-          title: 'Open street map'
-        }
-      ]
-    },
-    {
-      title: 'Extra',
-      type: 'header'
-    },
-    {
-      title: 'Documentation',
-      icon: 'fa fa-book',
-      active: false,
-      type: 'simple',
-      badge: {
-        text: 'Beta',
-        class: 'badge-primary'
-      },
-    },
-    {
-      title: 'Calendar',
-      icon: 'fa fa-calendar',
-      active: false,
-      type: 'simple'
-    },
-    {
-      title: 'Examples',
-      icon: 'fa fa-folder',
-      active: false,
-      type: 'simple'
-    }
+    // {
+    //   title: 'Charts',
+    //   icon: 'fa fa-chart-line',
+    //   active: false,
+    //   type: 'dropdown',
+    //   submenus: [
+    //     {
+    //       title: 'Pie chart',
+    //     },
+    //     {
+    //       title: 'Line chart'
+    //     },
+    //     {
+    //       title: 'Bar chart'
+    //     },
+    //     {
+    //       title: 'Histogram'
+    //     }
+    //   ]
+    // },
+    // {
+    //   title: 'Maps',
+    //   icon: 'fa fa-globe',
+    //   active: false,
+    //   type: 'dropdown',
+    //   submenus: [
+    //     {
+    //       title: 'Google maps',
+    //     },
+    //     {
+    //       title: 'Open street map'
+    //     }
+    //   ]
+    // },
+    // {
+    //   title: 'Extra',
+    //   type: 'header'
+    // },
+    // {
+    //   title: 'Documentation',
+    //   icon: 'fa fa-book',
+    //   active: false,
+    //   type: 'simple',
+    //   badge: {
+    //     text: 'Beta',
+    //     class: 'badge-primary'
+    //   },
+    // },
+    // {
+    //   title: 'Calendar',
+    //   icon: 'fa fa-calendar',
+    //   active: false,
+    //   type: 'simple'
+    // },
+    // {
+    //   title: 'Examples',
+    //   icon: 'fa fa-folder',
+    //   active: false,
+    //   type: 'simple'
+    // }
   ];
   constructor() { }
 
