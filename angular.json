@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "HiTechDairy-ERP"
+  "defaultProject": "HiTechDairy-ERP",
+  "cli": {
+    "analytics": "c9442457-ff1b-43f9-b27e-2202ba996338"
+  }
 }
