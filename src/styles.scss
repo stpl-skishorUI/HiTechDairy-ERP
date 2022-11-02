@@ -95,16 +95,22 @@ mat-label,
   background-color:#E7F7FF;
   font-size: 0.85rem;
 }
+.dashboard-table .srno-width{
+  width: 90px;
+}
+.dashboard-table .material-symbols-outlined{
+  font-size:16px !important;
+}
 .dashboard-table tr.mat-row,
 .dashboard-table tr.mat-header-row{
   height: 40px;
 }
 .table-5row-height{
-  height: 33vh;
+  max-height: 33vh;
   overflow-y: auto;
 }
 .table-10row-height{
-  height: 62vh;
+  max-height: 62vh;
   overflow-y: auto;
 }
 
