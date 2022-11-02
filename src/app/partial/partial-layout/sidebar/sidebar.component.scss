@@ -163,6 +163,12 @@
   margin-right: 10px;
   font-size: 8px;
 }
+.sidebar .sidebar-content .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:focus,
+.sidebar .sidebar-content .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:active,
+.sidebar .sidebar-content .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:hover{
+  background-color:transparent;
+  color: var(--main-dark-color) !important;
+}
 .sidebar .sidebar-content .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .badge, .sidebar .sidebar-content .sidebar-menu .sidebar-dropdown .sidebar-submenu li a .label {
   float: right;
   margin-top: 0px;
