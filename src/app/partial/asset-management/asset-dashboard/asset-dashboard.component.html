@@ -1,1 +1,665 @@
-<p>asset-dashboard works!</p>
+<div class="container">
+    <div class="row" id="dashboard-tabs">
+        <div class="col-sm-12">
+            <mat-tab-group>
+                <mat-tab label="Item Inward">
+                    <div class="overflow-hidden mt-3">
+                        <div class="row mb-3 g-3">
+                            <div class="col-sm-6">
+                                <div class="card plain-card">
+                                    <div class="card-header">Total Stock</div>
+                                    <div class="card-body">
+                                        chart
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card plain-card">
+                                    <div class="card-header">
+                                        Maintenance Item
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-5row-height">
+                                        <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                            <ng-container matColumnDef="position">
+                                                <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="name">
+                                                <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="weight">
+                                                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="symbol">
+                                                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                            </ng-container>
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card plain-card shadow">
+                                    <div class="card-header bg-transparent border-bottom-0 pb-0">
+                                        <div class="row align-items-baseline">
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item ID</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Group</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Category</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <button class="btn-main-outline rounded" [matMenuTriggerFor]="menu">
+                                                    <span class="material-symbols-outlined">
+                                                        file_download
+                                                    </span>
+                                                </button>
+                                                <mat-menu #menu="matMenu" xPosition="before">
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>PDF</span>
+                                                            <span class="text-danger"><i
+                                                                    class="fa-solid fa-file-pdf"></i></span>
+                                                        </div>
+                                                    </button>
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Excel</span>
+                                                            <span class="text-success"><i
+                                                                    class="fa-solid fa-file-excel"></i></span>
+                                                        </div>
+                                                    </button>
+                                                </mat-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-10row-height">
+                                        <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                            <ng-container matColumnDef="position">
+                                                <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="name">
+                                                <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="weight">
+                                                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="symbol">
+                                                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                            </ng-container>
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Item Outward">
+                    <div class="overflow-hidden mt-3">
+                        <div class="row mb-3 g-3">
+                            <div class="col-sm-6">
+                                <div class="card plain-card">
+                                    <div class="card-header">Issued Items</div>
+                                    <div class="card-body">
+                                        chart
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card plain-card">
+                                    <div class="card-header">
+                                        Maintenance Item
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-5row-height">
+                                        <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                            <ng-container matColumnDef="position">
+                                                <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="name">
+                                                <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="weight">
+                                                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="symbol">
+                                                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                            </ng-container>
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card plain-card shadow">
+                                    <div class="card-header bg-transparent border-bottom-0 pb-0">
+                                        <div class="row align-items-baseline">
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item ID</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Employee Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Issue Date</mat-label>
+                                                    <input matInput [matDatepicker]="picker">
+                                                    <mat-datepicker-toggle matSuffix [for]="picker">
+                                                    </mat-datepicker-toggle>
+                                                    <mat-datepicker #picker></mat-datepicker>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Return Date</mat-label>
+                                                    <input matInput [matDatepicker]="picker1">
+                                                    <mat-datepicker-toggle matSuffix [for]="picker1">
+                                                    </mat-datepicker-toggle>
+                                                    <mat-datepicker #picker1></mat-datepicker>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <button class="btn-main-outline rounded" [matMenuTriggerFor]="menu">
+                                                    <span class="material-symbols-outlined">
+                                                        file_download
+                                                    </span>
+                                                </button>
+                                                <mat-menu #menu="matMenu" xPosition="before">
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>PDF</span>
+                                                            <span class="text-danger"><i
+                                                                    class="fa-solid fa-file-pdf"></i></span>
+                                                        </div>
+                                                    </button>
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Excel</span>
+                                                            <span class="text-success"><i
+                                                                    class="fa-solid fa-file-excel"></i></span>
+                                                        </div>
+                                                    </button>
+                                                </mat-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-10row-height">
+                                        <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                            <ng-container matColumnDef="position">
+                                                <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="name">
+                                                <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="weight">
+                                                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="symbol">
+                                                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                            </ng-container>
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Item Repair">
+                    <div class="overflow-hidden mt-3">
+                        <div class="row mb-3 g-3">
+                            <div class="col-sm-6">
+                                <div class="card plain-card">
+                                    <div class="card-header">Repaired Items</div>
+                                    <div class="card-body">
+                                        chart
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card plain-card">
+                                    <div class="card-header">
+                                        Repairing Cost
+                                    </div>
+                                    <div class="card-body">
+                                        pie chart
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card plain-card shadow">
+                                    <div class="card-header bg-transparent border-bottom-0 pb-0">
+                                        <div class="row align-items-baseline">
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item ID</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Employee Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Repair Issue Date</mat-label>
+                                                    <input matInput [matDatepicker]="picker2">
+                                                    <mat-datepicker-toggle matSuffix [for]="picker2">
+                                                    </mat-datepicker-toggle>
+                                                    <mat-datepicker #picker2></mat-datepicker>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Repair Return Date</mat-label>
+                                                    <input matInput [matDatepicker]="picker3">
+                                                    <mat-datepicker-toggle matSuffix [for]="picker3">
+                                                    </mat-datepicker-toggle>
+                                                    <mat-datepicker #picker3></mat-datepicker>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <button class="btn-main-outline rounded" [matMenuTriggerFor]="menu">
+                                                    <span class="material-symbols-outlined">
+                                                        file_download
+                                                    </span>
+                                                </button>
+                                                <mat-menu #menu="matMenu" xPosition="before">
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>PDF</span>
+                                                            <span class="text-danger"><i
+                                                                    class="fa-solid fa-file-pdf"></i></span>
+                                                        </div>
+                                                    </button>
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Excel</span>
+                                                            <span class="text-success"><i
+                                                                    class="fa-solid fa-file-excel"></i></span>
+                                                        </div>
+                                                    </button>
+                                                </mat-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-10row-height w-100">
+                                        <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
+                                            <ng-container matColumnDef="position">
+                                                <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="name">
+                                                <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="weight">
+                                                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="symbol">
+                                                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                            </ng-container>
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Item History">
+                    <div class="overflow-hidden mt-3">
+                        <div class="row mb-3 g-3">
+                            <div class="col-sm-12">
+                                <div class="card plain-card shadow">
+                                    <div class="card-header bg-transparent border-bottom-0 pb-0">
+                                        <div class="row align-items-baseline">
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item ID</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Group</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Category</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <button class="btn-main-outline rounded" [matMenuTriggerFor]="menu">
+                                                    <span class="material-symbols-outlined">
+                                                        file_download
+                                                    </span>
+                                                </button>
+                                                <mat-menu #menu="matMenu" xPosition="before">
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>PDF</span>
+                                                            <span class="text-danger"><i
+                                                                    class="fa-solid fa-file-pdf"></i></span>
+                                                        </div>
+                                                    </button>
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Excel</span>
+                                                            <span class="text-success"><i
+                                                                    class="fa-solid fa-file-excel"></i></span>
+                                                        </div>
+                                                    </button>
+                                                </mat-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-10row-height">
+                                        <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                            <ng-container matColumnDef="position">
+                                                <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="name">
+                                                <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="weight">
+                                                <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="symbol">
+                                                <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                            </ng-container>
+                                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Item Ledger">
+                    <div class="overflow-hidden mt-3">
+                        <div class="row mb-3 g-3">
+                            <div class="col-sm-12">
+                                <div class="card plain-card shadow">
+                                    <div class="card-header bg-transparent border-bottom-0 pb-0">
+                                        <div class="row align-items-baseline">
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Item ID</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Vendor Name</mat-label>
+                                                    <input matInput>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm">
+                                                <mat-form-field appearance="legacy" class="w-100">
+                                                    <mat-label>Purchase Date</mat-label>
+                                                    <input matInput [matDatepicker]="picker4">
+                                                    <mat-datepicker-toggle matSuffix [for]="picker4">
+                                                    </mat-datepicker-toggle>
+                                                    <mat-datepicker #picker4></mat-datepicker>
+                                                </mat-form-field>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <button class="btn-main-outline rounded" [matMenuTriggerFor]="menu">
+                                                    <span class="material-symbols-outlined">
+                                                        file_download
+                                                    </span>
+                                                </button>
+                                                <mat-menu #menu="matMenu" xPosition="before">
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>PDF</span>
+                                                            <span class="text-danger"><i
+                                                                    class="fa-solid fa-file-pdf"></i></span>
+                                                        </div>
+                                                    </button>
+                                                    <button mat-menu-item>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span>Excel</span>
+                                                            <span class="text-success"><i
+                                                                    class="fa-solid fa-file-excel"></i></span>
+                                                        </div>
+                                                    </button>
+                                                </mat-menu>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0 scrollbar table-10row-height">
+                                        <table mat-table [dataSource]="dataSource1" multiTemplateDataRows
+                                            class="dashboard-table">
+                                            <ng-container matColumnDef="{{column}}"
+                                                *ngFor="let column of columnsToDisplay">
+                                                <th mat-header-cell *matHeaderCellDef> {{column}} </th>
+                                                <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+                                            </ng-container>
+                                            <ng-container matColumnDef="expand">
+                                                <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;
+                                                </th>
+                                                <td mat-cell *matCellDef="let element">
+                                                    <button mat-icon-button aria-label="expand row"
+                                                        (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+                                                        <mat-icon *ngIf="expandedElement !== element">
+                                                            <span class="material-symbols-outlined">
+                                                                keyboard_arrow_down
+                                                                </span>    
+                                                        </mat-icon>
+                                                        <mat-icon *ngIf="expandedElement === element">
+                                                            <span class="material-symbols-outlined">
+                                                                keyboard_arrow_up
+                                                                </span>
+                                                        </mat-icon>
+                                                    </button>
+                                                </td>
+                                            </ng-container>
+
+                                            <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+                                            <ng-container matColumnDef="expandedDetail">
+                                                <td mat-cell *matCellDef="let element"
+                                                    [attr.colspan]="columnsToDisplayWithExpand.length">
+                                                    <div class="element-detail"
+                                                        [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+                                                        <div class="p-4 form-container">
+                                                            <div class="row border-bottom pb-3 mb-3">
+                                                                <div class="col-sm-12">
+                                                                    <p class="text-main mb-2">Item Details</p>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Item Name</label>
+                                                                    <div class="form-data">Dell Laptop</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Item ID</label>
+                                                                    <div class="form-data">DE1011</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Item Category</label>
+                                                                    <div class="form-data">IT Hardware Laptop</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Item Group</label>
+                                                                    <div class="form-data">Movable</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Item Price</label>
+                                                                    <div class="form-data">28,000</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Invoice No.</label>
+                                                                    <div class="form-data">25968</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row border-bottom pb-3 mb-3">
+                                                                <div class="col-sm-12">
+                                                                    <p class="text-main mb-2">Store Details</p>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Store Name</label>
+                                                                    <div class="form-data">Cybernex</div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <label class="form-label">Store Address</label>
+                                                                    <div class="form-data">399, Shankar Sheth Rd, Swargate, Pune, Maharashtra 411037</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Contact No.</label>
+                                                                    <div class="form-data">9523601478</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row border-bottom pb-3 mb-3">
+                                                                <div class="col-sm-12">
+                                                                    <p class="text-main mb-2">Vendor Details</p>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Vendor Name</label>
+                                                                    <div class="form-data">VG Enterprise</div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <label class="form-label">Contact No.</label>
+                                                                    <div class="form-data">930149687</div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <label class="form-label">Email</label>
+                                                                    <div class="form-data">vikas@gmail.com</div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <label class="form-label">Address</label>
+                                                                    <div class="form-data">Katraj, Pune</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <p class="text-main mb-2">Repair Details</p>
+                                                                    <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                                                        <ng-container matColumnDef="position">
+                                                                          <th mat-header-cell *matHeaderCellDef> No. </th>
+                                                                          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                                                        </ng-container>
+                                                                        <ng-container matColumnDef="name">
+                                                                          <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                                          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                                                        </ng-container>
+                                                                        <ng-container matColumnDef="weight">
+                                                                          <th mat-header-cell *matHeaderCellDef> Weight </th>
+                                                                          <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                                                        </ng-container>
+                                                                        <ng-container matColumnDef="symbol">
+                                                                          <th mat-header-cell *matHeaderCellDef> Symbol </th>
+                                                                          <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                                                        </ng-container>                                                                      
+                                                                        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                                                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                                                      </table>                                                                     
+                                                                      
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </ng-container>
+
+                                            <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand; sticky: true"></tr>
+                                            <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"
+                                                class="example-element-row"
+                                                [class.example-expanded-row]="expandedElement === element"
+                                                (click)="expandedElement = expandedElement === element ? null : element">
+                                            </tr>
+                                            <tr mat-row *matRowDef="let row; columns: ['expandedDetail']"
+                                                class="example-detail-row"></tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+
+</div>      
