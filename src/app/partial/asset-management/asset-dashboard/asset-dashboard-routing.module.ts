@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AssetDashboardComponent } from './asset-dashboard.component';
+import { AssetsDashboardComponent } from './asset-dashboard.component';
 
-const routes: Routes = [{ path: '', component: AssetDashboardComponent }];
+const routes: Routes = [{ path: '', component: AssetsDashboardComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

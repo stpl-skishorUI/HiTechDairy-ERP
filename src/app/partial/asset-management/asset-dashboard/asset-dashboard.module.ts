@@ -2,16 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AssetDashboardRoutingModule } from './asset-dashboard-routing.module';
-import { AssetDashboardComponent } from './asset-dashboard.component';
-
+import { AssetsDashboardComponent } from './asset-dashboard.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
-    AssetDashboardComponent
+    AssetsDashboardComponent
   ],
   imports: [
     CommonModule,
-    AssetDashboardRoutingModule
+    AssetDashboardRoutingModule,
+    MaterialModule
   ]
 })
 export class AssetDashboardModule { }
