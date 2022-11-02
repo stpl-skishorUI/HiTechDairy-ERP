@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ParameterMasterRoutingModule } from './parameter-master-routing.module';
 import { ParameterMasterComponent } from './parameter-master.component';
-
+import {MaterialModule} from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { ParameterMasterComponent } from './parameter-master.component';
   ],
   imports: [
     CommonModule,
-    ParameterMasterRoutingModule
+    ParameterMasterRoutingModule,
+    MaterialModule
   ]
 })
 export class ParameterMasterModule { }
