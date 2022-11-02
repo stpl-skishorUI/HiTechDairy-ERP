@@ -45,6 +45,11 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
   color: #fff;
   border:solid 1px var(--main-color);
 }
+.btn-main-outline{
+  color:var(--main-color);
+  background-color: transparent;
+  border:solid 1px var(--main-color);
+}
 .text-main-dark{
   color: var(--main-dark-color);
 }
@@ -69,6 +74,7 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
 .plain-card,
 .dashboard-table,
 mat-label,
+button.mat-menu-item,
 .mat-input-element,
 .mat-tab-label-content{
   font-family: 'Rubik', sans-serif !important;
@@ -82,6 +88,10 @@ mat-label,
   font-size: 0.85rem;
   font-weight: 500;
   border-bottom: 0;
+}
+.plain-card .card-header button .material-symbols-outlined{
+  font-size: 16px;
+  line-height:unset;
 }
 .plain-card .card-body{
   font-size: 0.85rem;
@@ -112,6 +122,13 @@ mat-label,
 .table-10row-height{
   max-height: 62vh;
   overflow-y: auto;
+}
+.mat-menu-content:not(:empty){
+  padding:0 !important;
+}
+button.mat-menu-item {
+  height: 36px;
+  line-height: 36px;
 }
 
 
