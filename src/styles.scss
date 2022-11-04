@@ -3,7 +3,7 @@
 @import './assets/css/MaterialStyleSheet.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
+body { margin: 0; font-family: 'IBM Plex Sans', sans-serif;background-color: #F6F5F7;}
 .page-wrapper.toggled .sidebar {
   left: -300px;
 }
@@ -78,7 +78,7 @@ mat-label,
 button.mat-menu-item,
 .mat-input-element,
 .mat-tab-label-content{
-  font-family: 'Rubik', sans-serif !important;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .plain-card{
   border: none;
@@ -106,6 +106,7 @@ button.mat-menu-item,
 .dashboard-table th{
   background-color:#E7F7FF;
   font-size: 0.85rem;
+  font-weight: 600;
 }
 .dashboard-table .srno-width{
   width: 90px;

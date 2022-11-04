@@ -7,7 +7,7 @@ button.mat-menu-item,
 textarea.mat-input-element,
 .mat-radio-label,
 .mat-tab-label-content{
-  font-family: 'Rubik', sans-serif !important;
+    font-family: 'IBM Plex Sans', sans-serif;
   font-size: 0.85rem;
 }
 .mat-form-field-flex{
