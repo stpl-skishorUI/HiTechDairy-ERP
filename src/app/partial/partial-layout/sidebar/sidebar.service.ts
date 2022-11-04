@@ -100,6 +100,10 @@ export class SidebarService {
       type: 'dropdown',
       submenus: [
         {
+          title: 'Organization Register',
+          url:'organization-register'
+        },
+        {
           title: 'Company Register',
           url:'company-register'
         },

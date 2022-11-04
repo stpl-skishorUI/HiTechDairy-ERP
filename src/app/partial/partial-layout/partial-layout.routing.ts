@@ -15,6 +15,7 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'item-scrap-donated', loadChildren: () => import('../../partial/asset-management/manage-items/item-scrap-donated/item-scrap-donated.module').then(m => m.ItemScrapDonatedModule) },
 
   // HRMS
+  { path: 'organization-register', loadChildren: () => import('../../partial/HRMS/masters/organization-register/organization-register.module').then(m => m.OrganizationRegisterModule) },
   { path: 'company-register', loadChildren: () => import('../../partial/HRMS/masters/company-register/company-register.module').then(m => m.CompanyRegisterModule) },
   { path: 'branch-registration', loadChildren: () => import('../../partial/HRMS/masters/branch-registration/branch-registration.module').then(m => m.BranchRegistrationModule) },
   { path: 'department-registration', loadChildren: () => import('../../partial/HRMS/masters/department-registration/department-registration.module').then(m => m.DepartmentRegistrationModule) },
