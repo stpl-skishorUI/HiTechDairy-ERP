@@ -12,7 +12,7 @@ export class SidebarService {
       type: 'header'
     },
     {
-      title: 'Dashboard',
+      title: 'Asset Dashboard',
       icon: 'fa fa-book',
       active: false,
       type: 'simple',
@@ -82,6 +82,47 @@ export class SidebarService {
         }
       ]
     },
+    {
+      title: 'HRMS',
+      type: 'header'
+    },
+    {
+      title: 'HRMS Dashboard',
+      icon: 'fa fa-book',
+      active: false,
+      type: 'simple',
+      url:'./asset-dashboard'
+    },
+    {
+      title: 'Masters',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Company Register',
+          url:'company-register'
+        },
+        {
+          title: 'Branch Registration',
+          url:'branch-registration'
+        },
+        {
+          title: 'Department Registration',
+          url:'department-registration'
+        },
+        {
+          title: 'Designation Register',
+          url:'designation-register'
+        },
+        {
+          title: 'Bank Register',
+          url:'bank-register'
+        }
+      ]
+    },
+
+
     // {
     //   title: 'Charts',
     //   icon: 'fa fa-chart-line',
