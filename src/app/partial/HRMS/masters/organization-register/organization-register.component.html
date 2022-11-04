@@ -8,10 +8,13 @@
                 </mat-form-field>
             </div>
             <div class="col-sm-3">
-                <mat-form-field class="w-100" appearance="outline">
+                <mat-form-field appearance="outline" class="mb-3 w-100">
                     <mat-label>Incoorporation Date</mat-label>
-                    <input matInput placeholder="Item Category name">
-                </mat-form-field>
+                    <input matInput [matDatepicker]="icker">
+                   
+                    <mat-datepicker-toggle matSuffix [for]="icker"></mat-datepicker-toggle>
+                    <mat-datepicker #icker></mat-datepicker>
+                  </mat-form-field>
             </div>
             
         </div>
