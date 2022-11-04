@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BranchRegistrationRoutingModule } from './branch-registration-routing.module';
 import { BranchRegistrationComponent } from './branch-registration.component';
-
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { BranchRegistrationComponent } from './branch-registration.component';
   ],
   imports: [
     CommonModule,
-    BranchRegistrationRoutingModule
+    BranchRegistrationRoutingModule,
+    MaterialModule
   ]
 })
 export class BranchRegistrationModule { }
