@@ -40,13 +40,16 @@ body { margin: 0; font-family: 'IBM Plex Sans', sans-serif;background-color: #F6
 .bg-main{
   background-color:var(--main-color);
   color: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .btn-main{
+  font-family: 'IBM Plex Sans', sans-serif;
   background-color:var(--main-color);
   color: #fff;
   border:solid 1px var(--main-color);
 }
 .btn-main-outline{
+  font-family: 'IBM Plex Sans', sans-serif;
   color:var(--main-color);
   background-color: transparent;
   border:solid 1px var(--main-color);
