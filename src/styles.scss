@@ -1,5 +1,6 @@
 @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import './assets/css/MaterialStyleSheet.css';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
@@ -88,6 +89,7 @@ button.mat-menu-item,
   font-size: 0.85rem;
   font-weight: 500;
   border-bottom: 0;
+  padding: 15px 15px 0 15px;
 }
 .plain-card .card-header button .material-symbols-outlined{
   font-size: 16px;
