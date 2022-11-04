@@ -10,16 +10,12 @@
                                 <input matInput placeholder="Item Parameter Name">
                             </mat-form-field>
                         </div>
-                        <div class="col-sm-auto">
-                            <button mat-icon-button class="bg-main">
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-8">
                     <div class="scrollbar table-10row-height">
                         <table mat-table [dataSource]="dataSource" class="dashboard-table">
                             <ng-container matColumnDef="srno">
@@ -53,6 +49,30 @@
                             <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
                             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                         </table>
+                    </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card form-card">
+                                <div class="card-header">
+                                    Add Parameter
+                                </div>
+                                <div class="card-body">
+                                   
+                                    <div class="mb-2">
+                    
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Parameter Name</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="text-end">
+                                        <button mat-stroked-button class="btn-main">Submit</button>
+                    
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
