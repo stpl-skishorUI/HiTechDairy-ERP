@@ -12,8 +12,9 @@ export class ItemRegistrationComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   openDialog() {
-    const dialogRef = this.dialog.open(ItemRegistrationFormComponent);
-
+    const dialogRef = this.dialog.open(ItemRegistrationFormComponent,{
+    // width: '300px',
+    });
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
