@@ -28,7 +28,7 @@
                             </div>
                             <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
                                 <ng-container matColumnDef="position">
-                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr.No. </th>
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr. No. </th>
                                     <td mat-cell *matCellDef="let element"> {{element.position}} </td>
                                 </ng-container>
             
@@ -44,7 +44,7 @@
             
                                 <ng-container matColumnDef="corporation">
                                     <th mat-header-cell *matHeaderCellDef> Company Name </th>
-                                    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                    <td mat-cell *matCellDef="let element"> {{element.corporation}} </td>
                                 </ng-container>
             
                                 <ng-container matColumnDef="symbol">
