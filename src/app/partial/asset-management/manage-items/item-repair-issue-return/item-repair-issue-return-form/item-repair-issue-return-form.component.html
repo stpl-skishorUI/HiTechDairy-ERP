@@ -1,1 +1,54 @@
-<p>item-repair-issue-return-form works!</p>
+<h1 mat-dialog-title class="mat-dialog-title">
+    Item Repair Issue Return Registration
+    <button mat-icon-button mat-dialog-close>
+        <span class="material-symbols-outlined">
+            close
+            </span>
+    </button>
+</h1>
+<div mat-dialog-content class="mat-dialog-content">
+    <div class="row">
+        <div class="col-sm-6">
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Item Name</mat-label>
+                <input matInput placeholder="Item Name">
+            </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Vendor Name</mat-label>
+                <mat-select>
+                  <mat-option >Option 1</mat-option>
+                  <mat-option >Option 2</mat-option>
+                  <mat-option >Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Repair Issue Date</mat-label>
+                <input matInput [matDatepicker]="repairissuedate" placeholder="Repair Issue Date">
+                <mat-datepicker-toggle matSuffix [for]="repairissuedate">
+                </mat-datepicker-toggle>
+                <mat-datepicker #repairissuedate></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="col-sm-6">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Repair Return Date</mat-label>
+                <input matInput [matDatepicker]="returndate" placeholder="Repair Return Date">
+                <mat-datepicker-toggle matSuffix [for]="returndate">
+                </mat-datepicker-toggle>
+                <mat-datepicker #returndate></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </div>
+</div>
+<div mat-dialog-actions>
+  <div class="d-flex justify-content-between w-100">
+    <button mat-stroked-button class="btn-main-outline">Clear</button>
+    <button mat-stroked-button class="btn-main">Submit</button>
+  </div>
+</div>

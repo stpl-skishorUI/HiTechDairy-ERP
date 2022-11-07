@@ -13,7 +13,7 @@ export class ItemRegistrationComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(ItemRegistrationFormComponent,{
-    // width: '300px',
+    width: '600px',
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
