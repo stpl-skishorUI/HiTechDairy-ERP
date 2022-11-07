@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BankRegisterRoutingModule } from './bank-register-routing.module';
 import { BankRegisterComponent } from './bank-register.component';
-
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { BankRegisterComponent } from './bank-register.component';
   ],
   imports: [
     CommonModule,
-    BankRegisterRoutingModule
+    BankRegisterRoutingModule,
+    MaterialModule
   ]
 })
 export class BankRegisterModule { }
