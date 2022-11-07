@@ -32,6 +32,7 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
   :root
   {
     --main-color:rgb(68, 138, 255);
+    --main-light-color:rgb(231, 240, 255);
     --main-dark-color:rgb(38, 110, 230);
   }
 .text-main{
@@ -48,11 +49,16 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
   color: #fff;
   border:solid 1px var(--main-color);
 }
+.btn-main:hover{
+  background-color:var(--main-dark-color);
+  color: #fff;
+  border:solid 1px var(--main-dark-color);
+}
 .btn-main-outline{
   font-family: 'Rubik', sans-serif;
   color:var(--main-color);
-  background-color: transparent;
-  border:solid 1px var(--main-color);
+  background-color: var(--main-light-color);
+  border:solid 1px var(--main-light-color) !important;
 }
 .text-main-dark{
   color: var(--main-dark-color);
