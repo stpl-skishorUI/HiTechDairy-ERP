@@ -20,17 +20,8 @@ export interface PeriodicElement {
   action: any;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
-  {srno: 1, parameter_name: 'Hydrogen', action:''},
+  {srno: 1, parameter_name: 'Keyboard', action:''},
+  {srno: 2, parameter_name: 'CPU', action:''},
+  {srno: 3, parameter_name: 'Mouse', action:''},
+ 
 ];

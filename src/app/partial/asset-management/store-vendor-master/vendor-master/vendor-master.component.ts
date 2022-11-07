@@ -17,19 +17,8 @@ export class VendorMasterComponent implements OnInit {
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Microsoft', weight: 9922955666, symbol: 'Micro123@gmail.com',Action:''},
   {position: 2, name: 'Wipro', weight: 7058942513, symbol: 'Wip856@gmail.com',Action:''},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li',Action:''},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be',Action:''},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B',Action:''},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C',Action:''},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N',Action:''},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O',Action:''},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F',Action:''},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne',Action:''},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C',Action:''},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N',Action:''},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O',Action:''},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F',Action:''},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne',Action:''},
+  {position: 3, name: 'Wipro', weight: 7058942513, symbol: 'Wip856@gmail.com',Action:''},
+
 
 ];
 export interface PeriodicElement {
