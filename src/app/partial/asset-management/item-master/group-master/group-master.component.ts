@@ -31,9 +31,9 @@ export interface PeriodicElement {
   action: any;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {srno: 1, item_name: 'Hydrogen', action: ''},
-  {srno: 1, item_name: 'Hydrogen', action: ''},
-  {srno: 1, item_name: 'Hydrogen', action: ''},
-  {srno: 1, item_name: 'Hydrogen', action: ''},
+  {srno: 1, item_name: 'Software testing', action: ''},
+  {srno: 2, item_name: 'Mechanical Engineering', action: ''},
+  {srno: 3, item_name: 'Civil Engineering', action: ''},
+  {srno: 4, item_name: 'E & Tc Engineering', action: ''},
 
 ];
