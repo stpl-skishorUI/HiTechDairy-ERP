@@ -11,7 +11,7 @@ export class CustomerRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  displayedColumns: string[] = ['srno', 'party_name', 'address', 'mobile_no','account_no','route_name'];
+  displayedColumns: string[] = ['srno', 'party_name', 'address', 'mobile_no','account_no','route_name','action'];
   dataSource = ELEMENT_DATA;
 }
 
@@ -22,13 +22,11 @@ export interface PeriodicElement {
   mobile_no: number;
   account_no: number;
   route_name: string;
+  action: any;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {srno: 1, party_name: 'Prasad UI', address: 'Katraj', mobile_no: 8669264767,account_no:123456789052149,route_name: 'Route Name'},
-  {srno: 2, party_name: 'Prasad UI', address: 'Katraj', mobile_no: 8669264767,account_no:123456789052149,route_name: 'Route Name'},
-  {srno: 3, party_name: 'Prasad UI', address: 'Katraj', mobile_no: 8669264767,account_no:123456789052149,route_name: 'Route Name'},
-  {srno: 4, party_name: 'Prasad UI', address: 'Katraj', mobile_no: 8669264767,account_no:123456789052149,route_name: 'Route Name'},
-  {srno: 5, party_name: 'Prasad UI', address: 'Katraj', mobile_no: 8669264767,account_no:123456789052149,route_name: 'Route Name'}
+  {srno: 1, party_name: 'Prasad UI', address: 'Katraj', mobile_no: 8669264767,account_no:12345678,route_name: 'Route Name',action: ''},
+ 
  
 ];

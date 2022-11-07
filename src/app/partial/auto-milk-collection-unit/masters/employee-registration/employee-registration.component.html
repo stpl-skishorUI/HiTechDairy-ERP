@@ -20,7 +20,7 @@
                                 <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
 
 
-                                    <ng-container matColumnDef="srno">
+                                    <ng-container matColumnDef="srno" class="srno-width">
                                         <th mat-header-cell *matHeaderCellDef> Sr. No. </th>
                                         <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
                                     </ng-container>
@@ -38,6 +38,23 @@
                                     <ng-container matColumnDef="address">
                                         <th mat-header-cell *matHeaderCellDef> Address </th>
                                         <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+                                    </ng-container>
+                                    <ng-container matColumnDef="action">
+                                        <th mat-header-cell *matHeaderCellDef> Action </th>
+                                        <td mat-cell *matCellDef="let element">
+                                            <div class="d-flex">
+                                                <button mat-icon-button matTooltip ="Edit">
+                                                    <span class="material-symbols-outlined">
+                                                        edit
+                                                    </span>
+                                                </button>
+                                                <button mat-icon-button matTooltip ="Delete">
+                                                    <span class="material-symbols-outlined text-danger">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </td>
                                     </ng-container>
 
                                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
