@@ -39,23 +39,14 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',OldStore:'hello',NewStore:'hello',TransferDate:'hello',TransferApp:'hello',Action:''},
+  {position: 1, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 2, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 3, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 4, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 5, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 6, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 7, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
+  {position: 8, name: 'ABC ', ItemID: 165541, ItemCategory: 'Company',OldStore:'ABC Enterprises',NewStore:'PQR Enterprises',TransferDate:'25-1-2022',TransferApp:'PQR',Action:''},
   
  
 ];
