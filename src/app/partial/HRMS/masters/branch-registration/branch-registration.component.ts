@@ -17,14 +17,14 @@ export class BranchRegistrationComponent implements OnInit {
 export interface PeriodicElement {
   name: string;
   position: number;
-  weight: number;
+  weight: any;
   corporation:any;
   symbol: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, corporation:'a', symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, corporation:'a', symbol: 'He'},
+  {position: 1, name: 'Swargate', weight: 'SAT Techno', corporation:'Pune', symbol: 'H'},
+  {position: 2, name: 'Dhankawdi', weight: 'Read Tec', corporation:'Karnataka', symbol: 'He'},
   {position: 3, name: 'Lithium', weight: 6.941, corporation:'a', symbol: 'Li'},
   {position: 4, name: 'Beryllium', weight: 9.0122, corporation:'a', symbol: 'Be'},
   {position: 5, name: 'Boron', weight: 10.811, corporation:'a', symbol: 'B'},

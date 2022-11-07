@@ -15,8 +15,8 @@ export class VendorMasterComponent implements OnInit {
   dataSource = ELEMENT_DATA;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H',Action:''},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He',Action:''},
+  {position: 1, name: 'Microsoft', weight: 9922955666, symbol: 'Micro123@gmail.com',Action:''},
+  {position: 2, name: 'Wipro', weight: 7058942513, symbol: 'Wip856@gmail.com',Action:''},
   {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li',Action:''},
   {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be',Action:''},
   {position: 5, name: 'Boron', weight: 10.811, symbol: 'B',Action:''},
