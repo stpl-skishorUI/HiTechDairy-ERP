@@ -11,5 +11,19 @@ export class CompanyAccountRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  displayedColumns: string[] = ['position', 'name','Action'];
+  dataSource = ELEMENT_DATA;
+}
+const ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, name: 'Microsoft',Action:''},
+  {position: 2, name: 'Wipro',Action:''},
+  {position: 3, name: 'Wipro',Action:''},
 
+
+];
+export interface PeriodicElement {
+  name: string;
+  position: number;
+
+  Action:any;
 }

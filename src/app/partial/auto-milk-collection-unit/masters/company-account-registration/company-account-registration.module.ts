@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CompanyAccountRegistrationRoutingModule } from './company-account-registration-routing.module';
 import { CompanyAccountRegistrationComponent } from './company-account-registration.component';
-
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { CompanyAccountRegistrationComponent } from './company-account-registrat
   ],
   imports: [
     CommonModule,
-    CompanyAccountRegistrationRoutingModule
+    CompanyAccountRegistrationRoutingModule,
+    MaterialModule
   ]
 })
 export class CompanyAccountRegistrationModule { }
