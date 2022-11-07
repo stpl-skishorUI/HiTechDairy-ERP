@@ -1,26 +1,24 @@
 <div class="container-fluid">
     <div class="col-sm-12">
         <div class="card plain-card shadow">
-            <div class="card-header">
-                <div class="row align-items-center">
-                    <div class="col-sm-3">
-                        <mat-form-field class="w-100" appearance="outline">
-                            <mat-label>Vendor Name</mat-label>
-                            <input matInput placeholder="Store Name">
-                        </mat-form-field>
-                    </div>
-                    <div class="col-sm-3">
-                        <mat-form-field class="w-100" appearance="outline">
-                            <mat-label>Contact No</mat-label>
-                            <input matInput placeholder="Contact No">
-                        </mat-form-field>
-                    </div>
-                    
-                </div>
-            </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-8">
+                        <div class="row gx-2 align-items-center mb-3">
+                            <div class="col-sm-4">
+                                <mat-form-field class="w-100" appearance="outline">
+                                    <mat-label>Vendor Name</mat-label>
+                                    <input matInput placeholder="Store Name">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-4">
+                                <mat-form-field class="w-100" appearance="outline">
+                                    <mat-label>Contact No</mat-label>
+                                    <input matInput placeholder="Contact No">
+                                </mat-form-field>
+                            </div>
+                            
+                        </div>
                 <div class="scrollbar table-10row-height">
                     <table mat-table [dataSource]="dataSource" class="dashboard-table">
                         <ng-container matColumnDef="position">
@@ -69,7 +67,7 @@
                     <div class="col-sm-4">
                         <div class="card form-card">
                             <div class="card-header">
-                                Add Office
+                                Add Vendor Master
                             </div>
                             <div class="card-body">
                                 
@@ -94,7 +92,8 @@
                                         <input matInput>
                                     </mat-form-field>
                                 </div>
-                                <div class="text-end">
+                                <div class="d-flex justify-content-between">
+                                    <button mat-stroked-button class="btn-main-outline">Clear</button>
                                     <button mat-stroked-button class="btn-main">Submit</button>
                 
                                 </div>
