@@ -20,8 +20,8 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <mat-form-field appearance="outline" class="w-100">
-                                        <mat-label>Incoorporation Date</mat-label>
-                                        <input matInput [matDatepicker]="icker" placeholder="Enter incooperation date">
+                                        <mat-label>Incorporation Date</mat-label>
+                                        <input matInput [matDatepicker]="icker" placeholder="Enter incoperation date">
                                        
                                         <mat-datepicker-toggle matSuffix [for]="icker"></mat-datepicker-toggle>
                                         <mat-datepicker #icker></mat-datepicker>
@@ -46,7 +46,7 @@
                                 </ng-container>
                             
                                 <ng-container matColumnDef="corporation">
-                                    <th mat-header-cell *matHeaderCellDef> Incoorporation Date </th>
+                                    <th mat-header-cell *matHeaderCellDef> Incorporation Date </th>
                                     <td mat-cell *matCellDef="let element"> {{element.corporation}} </td>
                                   </ng-container>
             
@@ -54,12 +54,12 @@
                                   <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
                                   <td mat-cell *matCellDef="let element">
                                     <div class="d-flex">
-                                        <button mat-icon-button color="primary">
+                                        <button mat-icon-button matTooltip ="Edit">
                                             <span class="material-symbols-outlined">
                                                 edit
                                             </span>
                                         </button>
-                                        <button mat-icon-button color="primary">
+                                        <button mat-icon-button matTooltip ="Delete">
                                             <span class="material-symbols-outlined text-danger">
                                                 delete
                                             </span>
@@ -98,8 +98,8 @@
                                     </div>
                                     <div class="mb-3">
                                         <mat-form-field appearance="outline" class="mb-3 w-100">
-                                            <mat-label>Incoorporation Date</mat-label>
-                                            <input matInput [matDatepicker]="sicker" placeholder="Enter incooperation date">
+                                            <mat-label>Incorporation Date</mat-label>
+                                            <input matInput [matDatepicker]="sicker" placeholder="Enter incoperation date">
                                            
                                             <mat-datepicker-toggle matSuffix [for]="sicker"></mat-datepicker-toggle>
                                             <mat-datepicker #sicker></mat-datepicker>
