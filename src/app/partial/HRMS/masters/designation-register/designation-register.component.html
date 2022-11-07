@@ -1,140 +1,144 @@
-<div class="card plain-card ">
-    <div class="card-header">
-        <div class="row align-items-center">
-            <div class="col-sm-2">
-                <mat-form-field class="w-100" appearance="outline">
-                    <mat-label>Designation Name</mat-label>
-                    <input matInput placeholder="Item Group Name">
-                </mat-form-field>
-            </div>
-            <div class="col-sm-2">
-                <mat-form-field class="w-100" appearance="outline">
-                    <mat-label>Department Name</mat-label>
-                    <input matInput placeholder="Item Group Name">
-                </mat-form-field>
-            </div>
-            <div class="col-sm-2">
-                <mat-form-field class="w-100" appearance="outline">
-                    <mat-label>Branch Name</mat-label>
-                    <input matInput placeholder="Item Group Name">
-                </mat-form-field>
-            </div>
-
-        </div>
-    </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-sm-8">
-                <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
-                    <ng-container matColumnDef="position">
-                        <th mat-header-cell *matHeaderCellDef class="srno-width"> No. </th>
-                        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-                    </ng-container>
-
-                    <ng-container matColumnDef="name">
-                        <th mat-header-cell *matHeaderCellDef> Designation Name </th>
-                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-                    </ng-container>
-
-                    <ng-container matColumnDef="weight">
-                        <th mat-header-cell *matHeaderCellDef> Department Name </th>
-                        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-                    </ng-container>
-
-                    <ng-container matColumnDef="corporation">
-                        <th mat-header-cell *matHeaderCellDef> Branch Name </th>
-                        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-                    </ng-container>
-
-                    <ng-container matColumnDef="symbol">
-                        <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
-                        <td mat-cell *matCellDef="let element">
-                            <div class="d-flex">
-                                <button mat-icon-button color="primary">
-                                    <span class="material-symbols-outlined">
-                                        edit
-                                    </span>
-                                </button>
-                                <button mat-icon-button color="primary">
-                                    <span class="material-symbols-outlined text-danger">
-                                        delete
-                                    </span>
-                                </button>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card ">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="row gx-2 align-items-center mb-3">
+                                <div class="col-sm-4">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Designation Name</mat-label>
+                                        <input matInput placeholder="Item Group Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-sm-4">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Department Name</mat-label>
+                                        <input matInput placeholder="Item Group Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-sm-4">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Branch Name</mat-label>
+                                        <input matInput placeholder="Item Group Name">
+                                    </mat-form-field>
+                                </div>
+                    
                             </div>
-                        </td>
-                    </ng-container>
-
-                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                </table>
-
-
-            </div>
-            <div class="col-sm-4">
-                <div class="card form-card">
-                    <div class="card-header">
-                        Add Organization
+                            <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
+                                <ng-container matColumnDef="position">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> No. </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                </ng-container>
+            
+                                <ng-container matColumnDef="name">
+                                    <th mat-header-cell *matHeaderCellDef> Designation Name </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                </ng-container>
+            
+                                <ng-container matColumnDef="weight">
+                                    <th mat-header-cell *matHeaderCellDef> Department Name </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                </ng-container>
+            
+                                <ng-container matColumnDef="corporation">
+                                    <th mat-header-cell *matHeaderCellDef> Branch Name </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                </ng-container>
+            
+                                <ng-container matColumnDef="symbol">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
+                                    <td mat-cell *matCellDef="let element">
+                                        <div class="d-flex">
+                                            <button mat-icon-button color="primary">
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                            </button>
+                                            <button mat-icon-button color="primary">
+                                                <span class="material-symbols-outlined text-danger">
+                                                    delete
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </ng-container>
+            
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
+            
+            
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card form-card">
+                                <div class="card-header">
+                                    Add Designation
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Select Organization</mat-label>
+                                            <mat-select>
+                                                <mat-option value="one">First option</mat-option>
+                                                <mat-option value="two">Second option</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="mb-3">
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Select Company</mat-label>
+                                            <mat-select>
+                                                <mat-option value="one">First option</mat-option>
+                                                <mat-option value="two">Second option</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="mb-3">
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Select Branch</mat-label>
+                                            <mat-select>
+                                                <mat-option value="one">First option</mat-option>
+                                                <mat-option value="two">Second option</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="mb-3">
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Select Department</mat-label>
+                                            <mat-select>
+                                                <mat-option value="one">First option</mat-option>
+                                                <mat-option value="two">Second option</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="mb-3">
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Select Designation Level</mat-label>
+                                            <mat-select>
+                                                <mat-option value="one">First option</mat-option>
+                                                <mat-option value="two">Second option</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="mb-3">
+            
+                                        <mat-form-field appearance="outline" class="w-100 ">
+                                            <mat-label>Enter Designation Name</mat-label>
+                                            <input matInput>
+                                        </mat-form-field>
+                                    </div>
+            
+                                    <div class="d-flex justify-content-between">
+                                        <button mat-stroked-button class="btn-main">clear</button>
+                                        <button mat-stroked-button class="btn-main">Submit</button>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <mat-form-field appearance="outline" class="w-100 ">
-                                <mat-label>Select Organization</mat-label>
-                                <mat-select>
-                                    <mat-option value="one">First option</mat-option>
-                                    <mat-option value="two">Second option</mat-option>
-                                </mat-select>
-                            </mat-form-field>
-                        </div>
-                        <div class="mb-3">
-                            <mat-form-field appearance="outline" class="w-100 ">
-                                <mat-label>Select Company</mat-label>
-                                <mat-select>
-                                    <mat-option value="one">First option</mat-option>
-                                    <mat-option value="two">Second option</mat-option>
-                                </mat-select>
-                            </mat-form-field>
-                        </div>
-                        <div class="mb-3">
-                            <mat-form-field appearance="outline" class="w-100 ">
-                                <mat-label>Select Branch</mat-label>
-                                <mat-select>
-                                    <mat-option value="one">First option</mat-option>
-                                    <mat-option value="two">Second option</mat-option>
-                                </mat-select>
-                            </mat-form-field>
-                        </div>
-                        <div class="mb-3">
-                            <mat-form-field appearance="outline" class="w-100 ">
-                                <mat-label>Select Department</mat-label>
-                                <mat-select>
-                                    <mat-option value="one">First option</mat-option>
-                                    <mat-option value="two">Second option</mat-option>
-                                </mat-select>
-                            </mat-form-field>
-                        </div>
-                        <div class="mb-3">
-                            <mat-form-field appearance="outline" class="w-100 ">
-                                <mat-label>Select Designation Level</mat-label>
-                                <mat-select>
-                                    <mat-option value="one">First option</mat-option>
-                                    <mat-option value="two">Second option</mat-option>
-                                </mat-select>
-                            </mat-form-field>
-                        </div>
-                        <div class="mb-3">
-
-                            <mat-form-field appearance="outline" class="w-100 ">
-                                <mat-label>Enter Designation Name</mat-label>
-                                <input matInput>
-                            </mat-form-field>
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-                            <button mat-stroked-button class="btn-main">clear</button>
-                            <button mat-stroked-button class="btn-main">Submit</button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

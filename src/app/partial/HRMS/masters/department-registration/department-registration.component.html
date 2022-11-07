@@ -2,32 +2,30 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card plain-card ">
-                <div class="card-header">
-                    <div class="row align-items-center">
-                        <div class="col-sm-2">
-                            <mat-form-field class="w-100" appearance="outline">
-                                <mat-label>Department Name</mat-label>
-                                <input matInput placeholder="Item Group Name">
-                            </mat-form-field>
-                        </div>
-                        <div class="col-sm-2">
-                            <mat-form-field class="w-100" appearance="outline">
-                                <mat-label>Branch Name</mat-label>
-                                <input matInput placeholder="Item Group Name">
-                            </mat-form-field>
-                        </div>
-                        <div class="col-sm-2">
-                            <mat-form-field class="w-100" appearance="outline">
-                                <mat-label>Company Name</mat-label>
-                                <input matInput placeholder="Item Group Name">
-                            </mat-form-field>
-                        </div>
-            
-                    </div>
-                </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-8">
+                            <div class="row gx-2 align-items-center mb-3">
+                                <div class="col-sm-4">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Department Name</mat-label>
+                                        <input matInput placeholder="Item Group Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-sm-4">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Branch Name</mat-label>
+                                        <input matInput placeholder="Item Group Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-sm-4">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Company Name</mat-label>
+                                        <input matInput placeholder="Item Group Name">
+                                    </mat-form-field>
+                                </div>
+                    
+                            </div>
                             <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
                                 <ng-container matColumnDef="position">
                                     <th mat-header-cell *matHeaderCellDef class="srno-width"> No. </th>
