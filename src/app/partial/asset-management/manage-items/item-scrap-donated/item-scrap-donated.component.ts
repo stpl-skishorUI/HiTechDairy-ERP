@@ -37,7 +37,6 @@ export interface PeriodicElement {
   action: any;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {srno: 1, item_name: 'Hydrogen', item_id: 79, vendor_name: 'H Enterpise',purchase_date:'24/5/2022',disposal_method:'scrap',action:''},
-  {srno: 2, item_name: 'Hydrogen', item_id: 79, vendor_name: 'H Enterpise',purchase_date:'24/5/2022',disposal_method:'scrap',action:''},
-  {srno: 3, item_name: 'Hydrogen', item_id: 79, vendor_name: 'H Enterpise',purchase_date:'24/5/2022',disposal_method:'scrap',action:''},
+  {srno: 1, item_name: 'Civil Department', item_id: 179942, vendor_name: 'Harish',purchase_date:'24/5/2022',disposal_method:'scrap',action:''},
+
 ];

@@ -36,21 +36,10 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 2, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 3, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 4, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 5, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 6, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 7, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 8, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 9, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 10, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 11, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 12, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 13, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 14, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 15, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
-  {position: 16, name: 'Hydrogen', ItemID: 1.0079, EmployeeName: 'H',IssueDate:'hello',ReturnDate:'hello',Action:''},
+  {position: 1, name: 'Software Department', ItemID: 12214, EmployeeName: 'Dhiraj Shukla',IssueDate:'2-11-2020',ReturnDate:'27-1-2021',Action:''},
+  {position: 2, name: 'Software Department', ItemID: 12214, EmployeeName: 'Amit Shukla',IssueDate:'2-11-2020',ReturnDate:'27-1-2021',Action:''},
+  {position: 3, name: 'Software Department', ItemID: 12214, EmployeeName: 'Dhiraj Verma',IssueDate:'2-11-2020',ReturnDate:'27-1-2021',Action:''},
+  {position: 4, name: 'Software Department', ItemID: 12214, EmployeeName: 'Ankush Verma',IssueDate:'2-11-2020',ReturnDate:'27-1-2021',Action:''},
+  {position: 5, name: 'Software Department', ItemID: 12214, EmployeeName: 'Dhiraj Shukla',IssueDate:'2-11-2020',ReturnDate:'27-1-2021',Action:''},
 ];
 
