@@ -66,3 +66,15 @@ transform: translateY(-1.1em) scale(.75);
     font-family: 'Rubik', sans-serif;
     padding-block: 15px;
 }
+.mat-dialog-container .mat-dialog-content input.mat-input-element{    
+    height: 50px !important;
+}
+.mat-dialog-container .mat-dialog-content .mat-form-field-appearance-outline .mat-form-field-label{    
+    margin-top: -1rem !important;
+}
+.mat-dialog-container .mat-dialog-content .mat-select-trigger {
+    top: -16px;
+}
+.mat-dialog-container .mat-dialog-content .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-1em) scale(.75);
+}
