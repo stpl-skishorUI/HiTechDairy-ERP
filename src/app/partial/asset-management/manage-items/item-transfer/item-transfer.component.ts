@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { ItemTransferFormComponent } from './item-transfer-form/item-transfer-form.component';
 
 @Component({
   selector: 'app-item-transfer',
@@ -7,12 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemTransferComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
   displayedColumns: string[] = ['position', 'name', 'ItemID', 'ItemCategory','OldStore','NewStore','TransferDate','TransferApp','Action',];
   dataSource = ELEMENT_DATA;
+
+  itemtransferform(){
+    const dialogRef = this.dialog.open(ItemTransferFormComponent,{
+      width: '600px',
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+  }
+
 }
 export interface PeriodicElement {
   position: number;
