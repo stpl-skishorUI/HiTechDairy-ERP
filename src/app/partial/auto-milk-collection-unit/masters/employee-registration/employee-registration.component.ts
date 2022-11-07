@@ -11,5 +11,19 @@ export class EmployeeRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayedColumns: string[] = ['srno', 'employee_name', 'mobile_number', 'address'];
+  dataSource = ELEMENT_DATA;
 }
+
+export interface PeriodicElement {
+  srno: number;
+  employee_name: string;
+  mobile_number: number;
+  address: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {srno: 1, employee_name: 'Ram ', mobile_number: 8669264767, address: 'Katraj'},
+ 
+];
+
