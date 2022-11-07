@@ -91,7 +91,7 @@ export class SidebarService {
       icon: 'fa fa-book',
       active: false,
       type: 'simple',
-      url:'./asset-dashboard'
+      url:'./hrms-dashboard'
     },
     {
       title: 'Masters',
@@ -123,6 +123,53 @@ export class SidebarService {
           title: 'Bank Register',
           url:'bank-register'
         }
+      ]
+    },
+    {
+      title: 'AMCU',
+      type: 'header'
+    },
+    {
+      title: 'AMCU Dashboard',
+      icon: 'fa fa-book',
+      active: false,
+      type: 'simple',
+      url:'./amcu-dashboard'
+    },
+    {
+      title: 'Masters',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Route Register',
+          url:'route-register'
+        },
+        {
+          title: 'Village Registration',
+          url:'village-registration'
+        },
+        {
+          title: 'Company Account Registration',
+          url:'company-account-registration'
+        },
+        {
+          title: 'Customer Registration',
+          url:'customer-registration'
+        },
+        {
+          title: 'Material Registration',
+          url:'material-registration'
+        },
+        {
+          title: 'employee Registration',
+          url:'employee-registration'
+        },
+        {
+          title: 'Milk Collection Registration',
+          url:'milk-collector-registration'
+        }        
       ]
     },
 
