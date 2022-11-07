@@ -3,7 +3,7 @@
 @import './assets/css/MaterialStyleSheet.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'IBM Plex Sans', sans-serif;background-color: #F6F5F7;}
+body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
 .page-wrapper.toggled .sidebar {
   left: -300px;
 }
@@ -40,16 +40,16 @@ body { margin: 0; font-family: 'IBM Plex Sans', sans-serif;background-color: #F6
 .bg-main{
   background-color:var(--main-color);
   color: #fff;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 .btn-main{
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color:var(--main-color);
   color: #fff;
   border:solid 1px var(--main-color);
 }
 .btn-main-outline{
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color:var(--main-color);
   background-color: transparent;
   border:solid 1px var(--main-color);
@@ -81,7 +81,7 @@ mat-label,
 button.mat-menu-item,
 .mat-input-element,
 .mat-tab-label-content{
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 .plain-card{
   border: none;
