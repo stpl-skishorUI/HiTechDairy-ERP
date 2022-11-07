@@ -143,8 +143,8 @@ export class SidebarService {
       type: 'dropdown',
       submenus: [
         {
-          title: 'Route Register',
-          url:'route-register'
+          title: 'Route Registration',
+          url:'route-registration'
         },
         {
           title: 'Village Registration',
