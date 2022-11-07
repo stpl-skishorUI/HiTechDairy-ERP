@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import {ItemRepairIssueReturnFormComponent} from './item-repair-issue-return-form/item-repair-issue-return-form.component';
 
 @Component({
   selector: 'app-item-repair-issue-return',
@@ -7,12 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemRepairIssueReturnComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
 
   ngOnInit(): void {
   }
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','return','Action'];
   dataSource = ELEMENT_DATA;
+
+
+  
+  repreturnform(){
+    const dialogRef = this.dialog.open(ItemRepairIssueReturnFormComponent,{
+      width: '600px',
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+  }
+
 }
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H',return:'16-12-2022',Action:''},
