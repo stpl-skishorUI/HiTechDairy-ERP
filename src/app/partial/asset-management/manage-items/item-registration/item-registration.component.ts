@@ -38,24 +38,13 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
-  {position: 1, name: 'Hydrogen', ItemID: 1.0079, ItemCategory: 'H',ItemGroup:'hello',ItemParameter:'hello',StoreName:'hello',VendorName:'hello',Action:''},
+  {position: 1, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+  {position: 2, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+  {position: 3, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+  {position: 4, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+  {position: 5, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+  {position: 6, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+  {position: 7, name: 'Development', ItemID: 156642, ItemCategory: 'Hardware',ItemGroup:'Developer',ItemParameter:'software',StoreName:'STPL',VendorName:'ABC',Action:''},
+
 ];
+
