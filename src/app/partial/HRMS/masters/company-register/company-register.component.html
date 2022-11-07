@@ -9,19 +9,19 @@
                                 <div class="col-sm-4">
                                     <mat-form-field class="w-100" appearance="outline">
                                         <mat-label>Company Name</mat-label>
-                                        <input matInput placeholder="Item Group Name">
+                                        <input matInput placeholder="Enter Company Name">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-sm-4">
                                     <mat-form-field class="w-100" appearance="outline">
                                         <mat-label>Organization Name</mat-label>
-                                        <input matInput placeholder="Item Group Name">
+                                        <input matInput placeholder="Enter Organization Name">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-sm-4">
                                     <mat-form-field appearance="outline" class="w-100">
                                         <mat-label>Incoorporation Date</mat-label>
-                                        <input matInput [matDatepicker]="icker">
+                                        <input matInput [matDatepicker]="picker" placeholder="Enter incooperation date">
                                        
                                         <mat-datepicker-toggle matSuffix [for]="icker"></mat-datepicker-toggle>
                                         <mat-datepicker #icker></mat-datepicker>
@@ -31,7 +31,7 @@
                             </div>
                             <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
                                 <ng-container matColumnDef="position">
-                                  <th mat-header-cell *matHeaderCellDef class="srno-width"> No. </th>
+                                  <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr.No. </th>
                                   <td mat-cell *matCellDef="let element"> {{element.position}} </td>
                                 </ng-container>
                              
@@ -92,14 +92,14 @@
                                     <div class="mb-3">
                     
                                         <mat-form-field appearance="outline" class="w-100 ">
-                                            <mat-label>Enter Company Name</mat-label>
-                                            <input matInput>
+                                            <mat-label> Company Name</mat-label>
+                                            <input matInput placeholder="Enter Company Name">
                                         </mat-form-field>
                                     </div>
                                     <div class="mb-3">
                                         <mat-form-field appearance="outline" class="mb-3 w-100">
                                             <mat-label>Incoorporation Date</mat-label>
-                                            <input matInput [matDatepicker]="picker">
+                                            <input matInput [matDatepicker]="picker" placeholder="Enter incooperation date">
                                            
                                             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                             <mat-datepicker #picker></mat-datepicker>
@@ -107,26 +107,26 @@
                                     <div class="mb-3">
                     
                                         <mat-form-field appearance="outline" class="w-100 ">
-                                            <mat-label>Enter CIN Number</mat-label>
-                                            <input matInput>
+                                            <mat-label> CIN Number</mat-label>
+                                            <input matInput placeholder="Enter CIN Number">
                                         </mat-form-field>
                                     </div>
                                     <div class="mb-3">
                                         <mat-form-field appearance="outline" class="w-100">
-                                            <mat-label>Enter GSTIN </mat-label>
-                                            <input matInput>
+                                            <mat-label> GSTIN </mat-label>
+                                            <input matInput placeholder=" Enter GSTIN">
                                         </mat-form-field>
                                     </div>
                                     <div class="mb-3">
                                         <mat-form-field appearance="outline" class="w-100">
-                                            <mat-label>Enter Contact Number </mat-label>
-                                            <input matInput>
+                                            <mat-label> Contact Number </mat-label>
+                                            <input matInput placeholder="Enter Contact Number">
                                         </mat-form-field>
                                     </div>
                                     <div class="mb-3">
                                         <mat-form-field appearance="outline" class="w-100">
-                                            <mat-label>Enter Email ID </mat-label>
-                                            <input matInput>
+                                            <mat-label> Email ID </mat-label>
+                                            <input matInput placeholder="Enter Email ID">
                                         </mat-form-field>
                                     </div>
                                     <div class="mb-3">
