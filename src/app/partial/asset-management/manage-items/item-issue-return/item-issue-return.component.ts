@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ItemIssueReturnFormComponent } from './item-issue-return-form/item-issue-return-form.component';
 
 @Component({
   selector: 'app-item-issue-return',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemIssueReturnComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(ItemIssueReturnFormComponent,{
+    width: '500px',
+    });
+    dialogRef.afterClosed().subscribe((result: any) => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
   }
