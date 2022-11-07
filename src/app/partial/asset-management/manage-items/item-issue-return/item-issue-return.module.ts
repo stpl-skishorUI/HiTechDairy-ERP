@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ItemIssueReturnRoutingModule } from './item-issue-return-routing.module';
 import { ItemIssueReturnComponent } from './item-issue-return.component';
 import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
+import { ItemIssueReturnFormComponent } from './item-issue-return-form/item-issue-return-form.component';
 
 
 @NgModule({
   declarations: [
-    ItemIssueReturnComponent
+    ItemIssueReturnComponent,
+    ItemIssueReturnFormComponent
   ],
   imports: [
     CommonModule,

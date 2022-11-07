@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { ItemRegistrationFormComponent } from './item-registration-form/item-registration-form.component';
 
 @Component({
   selector: 'app-item-registration',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemRegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
+  openDialog() {
+    const dialogRef = this.dialog.open(ItemRegistrationFormComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
   ngOnInit(): void {
   }
   displayedColumns: string[] = ['position', 'name', 'ItemID', 'ItemCategory','ItemGroup','ItemParameter','StoreName','VendorName','Action',];
