@@ -29,7 +29,6 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'customer-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/customer-registration/customer-registration.module').then(m => m.CustomerRegistrationModule) },
   { path: 'material-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/material-registration/material-registration.module').then(m => m.MaterialRegistrationModule) },
   { path: 'employee-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/employee-registration/employee-registration.module').then(m => m.EmployeeRegistrationModule) },
-  { path: 'milk-collector-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/milk-collector-registration/milk-collector-registration.module').then(m => m.MilkCollectorRegistrationModule) },
   { path: 'route-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/route-registration/route-registration.module').then(m => m.RouteRegistrationModule) },
   { path: 'village-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/village-registration/village-registration.module').then(m => m.VillageRegistrationModule) },
   { path: 'company-account-registration', loadChildren: () => import('../../partial/auto-milk-collection-unit/masters/company-account-registration/company-account-registration.module').then(m => m.CompanyAccountRegistrationModule) },

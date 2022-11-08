@@ -165,11 +165,7 @@ export class SidebarService {
         {
           title: 'employee Registration',
           url:'employee-registration'
-        },
-        {
-          title: 'Milk Collection Registration',
-          url:'milk-collector-registration'
-        }        
+        }       
       ]
     },
 
