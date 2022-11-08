@@ -1,1 +1,172 @@
-<p>default-ratecard-assignment works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="row mb-3 align-items-center">
+                                <div class="col-sm">
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>RateCard Category</mat-label>
+                                        <mat-select>
+                                            <mat-option value="one">All</mat-option>
+                                            <mat-option value="two">Second option</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="text-end">
+                                        <button mat-stroked-button class="btn-main">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table table-10row-height">
+
+                                    <ng-container matColumnDef="srno">
+                                        <th mat-header-cell *matHeaderCellDef> Sr. No. </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="ratecard_category">
+                                        <th mat-header-cell *matHeaderCellDef> RateCard Category </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.ratecard_category}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="account_type">
+                                        <th mat-header-cell *matHeaderCellDef> Account Type </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.account_type}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="shift">
+                                        <th mat-header-cell *matHeaderCellDef> Shift </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.shift}} </td>
+                                    </ng-container>
+                                    <ng-container matColumnDef="ratecard_name">
+                                        <th mat-header-cell *matHeaderCellDef> RateCard Name </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.ratecard_name}} </td>
+                                    </ng-container>
+                                    <ng-container matColumnDef="action">
+                                        <th mat-header-cell *matHeaderCellDef> Action </th>
+                                        <td mat-cell *matCellDef="let element">
+                                            <div class="d-flex">
+                                                <button mat-icon-button matTooltip="Edit">
+                                                    <span class="material-symbols-outlined">
+                                                        edit
+                                                    </span>
+                                                </button>
+                                                <button mat-icon-button matTooltip="Delete">
+                                                    <span class="material-symbols-outlined text-danger">
+                                                        delete
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </ng-container>
+
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                </table>
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card form-card">
+                                <div class="card-header">
+                                    Add Category
+                                </div>
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <mat-form-field appearance="outline" class="w-100 ">
+                                                <mat-label>RateCard Category</mat-label>
+                                                <mat-select>
+                                                    <mat-option value="one">All</mat-option>
+                                                    <mat-option value="two">Collection At Dairy</mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                            <button mat-icon-button class="btn-main mx-2" (click)="ratecardcategory()">
+                                                <span class="material-symbols-outlined">
+                                                    add
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                
+                                                <mat-label>Account Type</mat-label>
+                                            </div>
+                                            <div>
+                                                <mat-radio-group aria-label="Select an option">
+                                                    <mat-radio-button value="1" class="d-block me-2">Cow Account</mat-radio-button>
+                                                    <mat-radio-button value="2">Buffalo Account</mat-radio-button>
+                                                </mat-radio-group>
+                                            </div>
+                                        </div>
+                                       
+
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <mat-label>Shift</mat-label>
+                                            </div>
+                                            <div>
+                                                <mat-checkbox class="example-margin me-2">Morning</mat-checkbox>
+                                                <mat-checkbox class="example-margin">Evening</mat-checkbox>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <mat-form-field appearance="outline" class="w-100 ">
+                                                <mat-label>Rate Card name</mat-label>
+                                                <mat-select>
+                                                    <mat-option value="one">Buffalo Rate Card Name - Morning
+                                                    </mat-option>
+                                                    <mat-option value="two">Cow Rate Card Name - Evening</mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-2 mb-3">
+                                        <mat-label>Base Rate</mat-label>
+                                        <div class="col-sm-4">
+                                            <mat-form-field class="w-100" appearance="outline">
+                                                <mat-label>FAT</mat-label>
+                                                <input matInput placeholder="Enter Fat">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <mat-form-field class="w-100" appearance="outline">
+                                                <mat-label>SNF</mat-label>
+                                                <input matInput placeholder="Enter SNF">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <mat-form-field class="w-100" appearance="outline">
+                                                <mat-label>Rate</mat-label>
+                                                <input matInput placeholder="Enter Rate">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="d-flex justify-content-between">
+                                            <button mat-stroked-button class="btn-main-outline">Clear</button>
+                                            <button mat-stroked-button class="btn-main">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

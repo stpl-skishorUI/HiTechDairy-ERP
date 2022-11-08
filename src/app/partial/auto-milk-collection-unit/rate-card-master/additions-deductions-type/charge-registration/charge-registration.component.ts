@@ -11,5 +11,16 @@ export class ChargeRegistrationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayedColumns: string[] = ['srno', 'charge_name', 'action'];
+  dataSource = ELEMENT_DATA;
 }
+
+export interface PeriodicElement {
+  srno: number;
+  charge_name: string;
+  action: any;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {srno: 1, charge_name: 'Bonus', action: ''}
+];
