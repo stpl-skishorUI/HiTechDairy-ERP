@@ -11,5 +11,16 @@ export class ChargeCategoryComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayedColumns: string[] = ['charge_category', 'Unit'];
+  dataSource = ELEMENT_DATA;
 }
+export interface PeriodicElement {
+  charge_category: string;
+  Unit: number;
+ 
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {charge_category: 'Charge Category', Unit: 1},
+ 
+];

@@ -1,1 +1,57 @@
-<p>collection-type works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card">
+                <div class="card-header">
+                    Collection Type
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-3">
+                            <mat-form-field class="w-100" appearance="outline">
+                                <mat-label>Collection Type</mat-label>
+                                <input matInput placeholder="Enter Collection Type">
+                            </mat-form-field>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <button mat-stroked-button class="btn-main-outline">Clear</button>
+                            <button mat-stroked-button class="btn-main">Submit</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table mat-table [dataSource]="dataSource" class="dashboard-table w-100">
+
+                            <ng-container matColumnDef="collectiontype">
+                                <th mat-header-cell *matHeaderCellDef> Collection Type </th>
+                                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                            </ng-container>
+                            <ng-container matColumnDef="action">
+                                <th mat-header-cell *matHeaderCellDef> Action </th>
+                                <td mat-cell *matCellDef="let element">
+                                    <div class="d-flex">
+                                        <button mat-icon-button matTooltip="Edit">
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </button>
+                                        <button mat-icon-button matTooltip="Delete">
+                                            <span class="material-symbols-outlined text-danger">
+                                                delete
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </ng-container>
+
+
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

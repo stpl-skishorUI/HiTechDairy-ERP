@@ -1,1 +1,36 @@
-<p>charge-category works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    Charge Category
+                    <span class="material-symbols-outlined" [mat-dialog-close]="true">
+                        close
+                        </span>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
+
+                            <ng-container matColumnDef="charge_category">
+                              <th mat-header-cell *matHeaderCellDef> Charge Category </th>
+                              <td mat-cell *matCellDef="let element"> {{element.charge_category}} </td>
+                            </ng-container>
+                          
+                            <ng-container matColumnDef="Unit">
+                              <th mat-header-cell *matHeaderCellDef> Unit </th>
+                              <td mat-cell *matCellDef="let element"> {{element.Unit}} </td>
+                            </ng-container>
+                          
+                          
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                          </table>
+                          
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
