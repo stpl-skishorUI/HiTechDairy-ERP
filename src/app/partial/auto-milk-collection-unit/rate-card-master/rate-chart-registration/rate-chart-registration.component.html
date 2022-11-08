@@ -1,1 +1,335 @@
-<p>rate-chart-registration works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card shadow">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-12">
+                            <div class="row mb-3 align-items-center">
+                                <div class="col-sm-8">
+                                    <span class="fw-bold">Rate Chart Registration</span>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+
+                                        <mat-form-field class="w-100 me-2" appearance="outline">
+                                            <mat-label>Card Name</mat-label>
+                                            <input matInput placeholder="Card Name">
+                                        </mat-form-field>
+
+                                        <button mat-icon-button class="bg-main" (click)="ratechartlist()">
+                                            <span class="material-symbols-outlined">
+                                                add
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card plain-card border mb-4">
+                                        <div class="card-header">
+                                            Base Rate
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gx-2">
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>Fat</mat-label>
+                                                        <input matInput placeholder="Fat">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>SNF</mat-label>
+                                                        <input matInput placeholder="SNF">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>Rate</mat-label>
+                                                        <input matInput placeholder="Rate">
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card plain-card border">
+                                        <div class="card-header">
+                                            Rate Chart Range
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gx-2 align-items-center mb-4">
+                                                <div class="col-sm-4">
+                                                    Fat
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>From</mat-label>
+                                                        <input matInput placeholder="From">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>To</mat-label>
+                                                        <input matInput placeholder="To">
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                            <div class="row gx-2 align-items-center">
+                                                <div class="col-sm-4">
+                                                    SNF
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>From</mat-label>
+                                                        <input matInput placeholder="From">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>To</mat-label>
+                                                        <input matInput placeholder="To">
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            FAT Interval
+                                            <div class="mb-0">
+                                                <button mat-icon-button class="text-main">
+                                                    <span class="material-symbols-outlined">
+                                                        add
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-2 align-items-center mb-2 pb-1">
+                                                <div class="col-sm-2">
+                                                    FAT
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>From</mat-label>
+                                                        <input matInput placeholder="From">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>To</mat-label>
+                                                        <input matInput placeholder="To">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>Rate</mat-label>
+                                                        <input matInput placeholder="Rate">
+                                                    </mat-form-field>
+                                                </div>
+
+                                            </div>
+                                            <div class="scrollbar table-5row-height">
+                                                <table mat-table [dataSource]="dataSource2"
+                                                    class="w-100 dashboard-table">
+                                                    <ng-container matColumnDef="from">
+                                                        <th mat-header-cell *matHeaderCellDef> From </th>
+                                                        <td mat-cell *matCellDef="let element"> {{element.from}} </td>
+                                                    </ng-container>
+
+                                                    <ng-container matColumnDef="to">
+                                                        <th mat-header-cell *matHeaderCellDef> To </th>
+                                                        <td mat-cell *matCellDef="let element"> {{element.to}} </td>
+                                                    </ng-container>
+
+                                                    <ng-container matColumnDef="rate">
+                                                        <th mat-header-cell *matHeaderCellDef> Rate </th>
+                                                        <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
+                                                    </ng-container>
+
+                                                    <ng-container matColumnDef="X">
+                                                        <th mat-header-cell *matHeaderCellDef class="srno-width"> Action
+                                                        </th>
+                                                        <td mat-cell *matCellDef="let element">
+                                                            <div class="d-flex">
+                                                                <button mat-icon-button matTooltip="Edit">
+                                                                    <span class="material-symbols-outlined">
+                                                                        edit
+                                                                    </span>
+                                                                </button>
+                                                                <button mat-icon-button matTooltip="Delete">
+                                                                    <span class="material-symbols-outlined text-danger">
+                                                                        delete
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </ng-container>
+
+                                                    <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                                                    <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+                                                </table>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            SNF Interval
+                                            <div class="mb-0">
+                                                <button mat-icon-button class="text-main">
+                                                    <span class="material-symbols-outlined">
+                                                        add
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-2 align-items-center mb-2 pb-1">
+                                                <div class="col-sm-2">
+                                                    SNF
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>From</mat-label>
+                                                        <input matInput placeholder="From">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>To</mat-label>
+                                                        <input matInput placeholder="To">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <mat-form-field class="w-100" appearance="outline">
+                                                        <mat-label>Rate</mat-label>
+                                                        <input matInput placeholder="Rate">
+                                                    </mat-form-field>
+                                                </div>
+
+                                            </div>
+                                            <div class="scrollbar table-5row-height">
+                                                <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                                    <ng-container matColumnDef="position">
+                                                        <th mat-header-cell *matHeaderCellDef class="srno-width">From
+                                                        </th>
+                                                        <td mat-cell *matCellDef="let element"> {{element.position}}
+                                                        </td>
+                                                    </ng-container>
+
+                                                    <ng-container matColumnDef="name">
+                                                        <th mat-header-cell *matHeaderCellDef>To</th>
+                                                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                                    </ng-container>
+
+                                                    <ng-container matColumnDef="Rate">
+                                                        <th mat-header-cell *matHeaderCellDef>Rate</th>
+                                                        <td mat-cell *matCellDef="let element"> {{element.Rate}} </td>
+                                                    </ng-container>
+
+                                                    <ng-container matColumnDef="Action">
+                                                        <th mat-header-cell *matHeaderCellDef class="srno-width">Action
+                                                        </th>
+                                                        <td mat-cell *matCellDef="let element">
+                                                            <div class="d-flex">
+                                                                <button mat-icon-button matTooltip="Edit">
+                                                                    <span class="material-symbols-outlined">
+                                                                        edit
+                                                                    </span>
+                                                                </button>
+                                                                <button mat-icon-button matTooltip="Delete">
+                                                                    <span class="material-symbols-outlined text-danger">
+                                                                        delete
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </ng-container>
+
+                                                    <tr mat-header-row
+                                                        *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 text-end">
+                        <button mat-stroked-button class="btn-main">Generate Table</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card plain-card border mb-3">
+                                <div class="card-body">
+                                    <table mat-table [dataSource]="dataSource3" class="w-100 dashboard-table">
+
+                                        <ng-container matColumnDef="position">
+                                            <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr .No. </th>
+                                            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                        </ng-container>
+
+                                        <ng-container matColumnDef="name">
+                                            <th mat-header-cell *matHeaderCellDef> Name </th>
+                                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                        </ng-container>
+
+                                        <ng-container matColumnDef="symbol">
+                                            <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
+                                            <td mat-cell *matCellDef="let element">
+                                                <div class="d-flex">
+                                                    <button mat-icon-button matTooltip="Edit">
+                                                        <span class="material-symbols-outlined">
+                                                            edit
+                                                        </span>
+                                                    </button>
+                                                    <button mat-icon-button matTooltip="Delete">
+                                                        <span class="material-symbols-outlined text-danger">
+                                                            delete
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </ng-container>
+
+                                        <tr mat-header-row *matHeaderRowDef="displayedColumns3"></tr>
+                                        <tr mat-row *matRowDef="let row; columns: displayedColumns3;"></tr>
+                                    </table>
+
+
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Choose a date</mat-label>
+                                    <input matInput [matDatepicker]="picker">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                                <div class="d-block">
+                                    <button mat-stroked-button class="btn-main">Apply</button>
+                                    <button mat-stroked-button class="btn-main ms-2">Print View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
