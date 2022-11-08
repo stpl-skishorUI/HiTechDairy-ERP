@@ -11,5 +11,15 @@ export class CollectionTypeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayedColumns: string[] = ['collectiontype','action'];
+  dataSource = ELEMENT_DATA;
 }
+export interface PeriodicElement {
+  collectiontype: string;
+  action: string;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {collectiontype: 'Collection At Dairy', action:''},
+ 
+];

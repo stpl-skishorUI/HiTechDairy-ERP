@@ -5,6 +5,7 @@ import { AdditionsDeductionsChargesRoutingModule } from './additions-deductions-
 import { AdditionsDeductionsChargesComponent } from './additions-deductions-charges.component';
 import { CollectionTypeComponent } from './collection-type/collection-type.component';
 import { ChargeCategoryComponent } from './charge-category/charge-category.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ChargeCategoryComponent } from './charge-category/charge-category.compo
   ],
   imports: [
     CommonModule,
-    AdditionsDeductionsChargesRoutingModule
+    AdditionsDeductionsChargesRoutingModule,
+    MaterialModule
   ]
 })
 export class AdditionsDeductionsChargesModule { }
