@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RateCardRoutingModule } from './rate-card-routing.module';
 import { RateCardComponent } from './rate-card.component';
-
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { RateCardComponent } from './rate-card.component';
   ],
   imports: [
     CommonModule,
-    RateCardRoutingModule
+    RateCardRoutingModule,
+    MaterialModule
   ]
 })
 export class RateCardModule { }
