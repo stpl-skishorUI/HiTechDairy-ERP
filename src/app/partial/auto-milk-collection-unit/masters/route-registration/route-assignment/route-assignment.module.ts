@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RouteAssignmentRoutingModule } from './route-assignment-routing.module';
 import { RouteAssignmentComponent } from './route-assignment.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { RouteAssignmentComponent } from './route-assignment.component';
   ],
   imports: [
     CommonModule,
-    RouteAssignmentRoutingModule
+    RouteAssignmentRoutingModule,
+    MaterialModule
   ]
 })
 export class RouteAssignmentModule { }

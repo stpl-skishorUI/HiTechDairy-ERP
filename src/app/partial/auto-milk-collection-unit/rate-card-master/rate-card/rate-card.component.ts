@@ -11,5 +11,19 @@ export class RateCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  displayedColumns: string[] = ['position', 'name','Action'];
+  dataSource = ELEMENT_DATA;
+}
+const ELEMENT_DATA: PeriodicElement[] = [
+  {position: 1, name: 'Credit',Action:''},
+  {position: 2, name: 'Debit',Action:''},
+  {position: 3, name: 'Slice',Action:''},
 
+
+];
+export interface PeriodicElement {
+  name: string;
+  position: number;
+
+  Action:any;
 }
