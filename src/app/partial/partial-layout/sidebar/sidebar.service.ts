@@ -168,68 +168,35 @@ export class SidebarService {
         }       
       ]
     },
+    {
+      title: 'Rate Card',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Rate Card',
+          url:'rate-card'
+        },
+        {
+          title: 'Rate Chart Registration',
+          url:'rate-chart-registration'
+        },
+        {
+          title: 'Default Rate Card Assignment',
+          url:'default-ratecard-assignment'
+        },
+        {
+          title: 'Additions / Deductions Type',
+          url:'additions-deductions-type'
+        },
+        {
+          title: 'Additions Deductions Charges',
+          url:'additions-deductions-charges'
+        }     
+      ]
+    },
 
-
-    // {
-    //   title: 'Charts',
-    //   icon: 'fa fa-chart-line',
-    //   active: false,
-    //   type: 'dropdown',
-    //   submenus: [
-    //     {
-    //       title: 'Pie chart',
-    //     },
-    //     {
-    //       title: 'Line chart'
-    //     },
-    //     {
-    //       title: 'Bar chart'
-    //     },
-    //     {
-    //       title: 'Histogram'
-    //     }
-    //   ]
-    // },
-    // {
-    //   title: 'Maps',
-    //   icon: 'fa fa-globe',
-    //   active: false,
-    //   type: 'dropdown',
-    //   submenus: [
-    //     {
-    //       title: 'Google maps',
-    //     },
-    //     {
-    //       title: 'Open street map'
-    //     }
-    //   ]
-    // },
-    // {
-    //   title: 'Extra',
-    //   type: 'header'
-    // },
-    // {
-    //   title: 'Documentation',
-    //   icon: 'fa fa-book',
-    //   active: false,
-    //   type: 'simple',
-    //   badge: {
-    //     text: 'Beta',
-    //     class: 'badge-primary'
-    //   },
-    // },
-    // {
-    //   title: 'Calendar',
-    //   icon: 'fa fa-calendar',
-    //   active: false,
-    //   type: 'simple'
-    // },
-    // {
-    //   title: 'Examples',
-    //   icon: 'fa fa-folder',
-    //   active: false,
-    //   type: 'simple'
-    // }
   ];
   constructor() { }
 
