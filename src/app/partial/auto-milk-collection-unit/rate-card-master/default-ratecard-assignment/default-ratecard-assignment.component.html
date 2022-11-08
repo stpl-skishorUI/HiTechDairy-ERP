@@ -5,8 +5,8 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-8">
-                            <div class="row mb-3">
-                                <div class="col-sm-4">
+                            <div class="row mb-3 align-items-center">
+                                <div class="col-sm">
                                     <mat-form-field appearance="outline" class="w-100 ">
                                         <mat-label>RateCard Category</mat-label>
                                         <mat-select>
@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                             <div>
-                                <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
+                                <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table table-10row-height">
 
                                     <ng-container matColumnDef="srno">
                                         <th mat-header-cell *matHeaderCellDef> Sr. No. </th>
@@ -103,7 +103,7 @@
                                             </div>
                                             <div>
                                                 <mat-radio-group aria-label="Select an option">
-                                                    <mat-radio-button value="1" class="d-block">Cow Account</mat-radio-button>
+                                                    <mat-radio-button value="1" class="d-block me-2">Cow Account</mat-radio-button>
                                                     <mat-radio-button value="2">Buffalo Account</mat-radio-button>
                                                 </mat-radio-group>
                                             </div>
@@ -117,7 +117,7 @@
                                                 <mat-label>Shift</mat-label>
                                             </div>
                                             <div>
-                                                <mat-checkbox class="example-margin">Morning</mat-checkbox>
+                                                <mat-checkbox class="example-margin me-2">Morning</mat-checkbox>
                                                 <mat-checkbox class="example-margin">Evening</mat-checkbox>
                                             </div>
                                         </div>

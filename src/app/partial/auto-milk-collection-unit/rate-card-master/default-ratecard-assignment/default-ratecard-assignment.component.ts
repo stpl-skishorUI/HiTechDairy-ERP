@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RateCardCategoryComponent } from './rate-card-category/rate-card-category.component';
+import {MatDialog} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-default-ratecard-assignment',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultRatecardAssignmentComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -15,7 +18,12 @@ export class DefaultRatecardAssignmentComponent implements OnInit {
   dataSource = ELEMENT_DATA;
 
   ratecardcategory(){
-    alert("hiii")
+    const dialogRef = this.dialog.open(RateCardCategoryComponent,{
+      width: '500px',
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
     
   }
 
