@@ -34,6 +34,7 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="scrollbar table-10row-height">
                                 <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
                                     <ng-container matColumnDef="srno">
                                         <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr. No. </th>
@@ -83,7 +84,7 @@
                                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                                     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                                 </table>
-
+                                </div>
 
                             </div>
                         </div>

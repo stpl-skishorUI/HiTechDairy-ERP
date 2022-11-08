@@ -12,66 +12,68 @@
                                         <input matInput placeholder="Item Parameter Name">
                                     </mat-form-field>
                                 </div>
-                                
+
                             </div>
-                    <div class="scrollbar table-10row-height">
-                        <table mat-table [dataSource]="dataSource" class="dashboard-table">
-                            <ng-container matColumnDef="srno">
-                                <th mat-header-cell *matHeaderCellDef class="srno-width">Sr. No.</th>
-                                <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
-                            </ng-container>
+                        
+                        <div class="scrollbar table-10row-height">
+                            <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                <ng-container matColumnDef="srno">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width">Sr. No.</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
+                                </ng-container>
 
-                            <ng-container matColumnDef="parameter_name">
-                                <th mat-header-cell *matHeaderCellDef> Parameter Name </th>
-                                <td mat-cell *matCellDef="let element"> {{element.parameter_name}} </td>
-                            </ng-container>
+                                <ng-container matColumnDef="parameter_name">
+                                    <th mat-header-cell *matHeaderCellDef> Parameter Name </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.parameter_name}} </td>
+                                </ng-container>
 
-                            <ng-container matColumnDef="action">
-                                <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
-                                <td mat-cell *matCellDef="let element">
-                                    <div class="d-flex">
-                                        <button mat-icon-button matTooltip ="Edit">
-                                            <span class="material-symbols-outlined">
-                                                edit
-                                            </span>
-                                        </button>
-                                        <button mat-icon-button matTooltip ="Delete">
-                                            <span class="material-symbols-outlined text-danger">
-                                                delete
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </ng-container>
+                                <ng-container matColumnDef="action">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
+                                    <td mat-cell *matCellDef="let element">
+                                        <div class="d-flex">
+                                            <button mat-icon-button matTooltip="Edit">
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                            </button>
+                                            <button mat-icon-button matTooltip="Delete">
+                                                <span class="material-symbols-outlined text-danger">
+                                                    delete
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </ng-container>
 
-                            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                        </table>
-                    </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card form-card">
-                                <div class="card-header">
-                                    Add Parameter
-                                </div>
-                                <div class="card-body">
-                                   
-                                    <div class="mb-3">
-                    
-                                        <mat-form-field appearance="outline" class="w-100 ">
-                                            <mat-label>Parameter Name</mat-label>
-                                            <input matInput placeholder="Parameter Name">
-                                        </mat-form-field>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <button mat-stroked-button class="btn-main-outline">Clear</button>
-                                        <button mat-stroked-button class="btn-main">Submit</button>
-                                    </div>
-                                </div>
-                    
-                            </div>
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
                         </div>
                     </div>
+                    
+                    <div class="col-sm-4">
+                        <div class="card form-card">
+                            <div class="card-header">
+                                Add Parameter
+                            </div>
+                            <div class="card-body">
+
+                                <div class="mb-3">
+
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>Parameter Name</mat-label>
+                                        <input matInput placeholder="Parameter Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button mat-stroked-button class="btn-main-outline">Clear</button>
+                                    <button mat-stroked-button class="btn-main">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

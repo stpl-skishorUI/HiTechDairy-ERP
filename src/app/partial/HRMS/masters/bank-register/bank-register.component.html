@@ -31,6 +31,7 @@
                                     </mat-form-field>
                                 </div>
                             </div>
+                            <div class="scrollbar table-10row-height">
                             <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
                                 <ng-container matColumnDef="position">
                                   <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr. No. </th>
@@ -79,7 +80,7 @@
                                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                               </table>
                               
-                              
+                            </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="card form-card">
