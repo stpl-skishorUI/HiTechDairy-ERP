@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AdditionsDeductionsTypeRoutingModule } from './additions-deductions-type-routing.module';
 import { AdditionsDeductionsTypeComponent } from './additions-deductions-type.component';
 import { ChargeRegistrationComponent } from './charge-registration/charge-registration.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ChargeRegistrationComponent } from './charge-registration/charge-regist
   ],
   imports: [
     CommonModule,
-    AdditionsDeductionsTypeRoutingModule
+    AdditionsDeductionsTypeRoutingModule,
+    MaterialModule
   ]
 })
 export class AdditionsDeductionsTypeModule { }
