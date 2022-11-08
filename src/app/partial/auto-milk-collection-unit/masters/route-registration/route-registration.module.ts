@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RouteRegistrationRoutingModule } from './route-registration-routing.module';
 import { RouteRegistrationComponent } from './route-registration.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { RouteRegistrationComponent } from './route-registration.component';
   ],
   imports: [
     CommonModule,
-    RouteRegistrationRoutingModule
+    RouteRegistrationRoutingModule,
+    MaterialModule
   ]
 })
 export class RouteRegistrationModule { }
