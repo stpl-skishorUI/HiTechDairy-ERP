@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BulkBillCalculationRoutingModule } from './bulk-bill-calculation-routing.module';
 import { BulkBillCalculationComponent } from './bulk-bill-calculation.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BulkBillCalculationComponent } from './bulk-bill-calculation.component'
   ],
   imports: [
     CommonModule,
-    BulkBillCalculationRoutingModule
+    BulkBillCalculationRoutingModule,
+    MaterialModule
   ]
 })
 export class BulkBillCalculationModule { }
