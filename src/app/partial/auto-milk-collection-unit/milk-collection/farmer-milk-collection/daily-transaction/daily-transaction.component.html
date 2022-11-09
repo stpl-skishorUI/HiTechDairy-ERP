@@ -1,1 +1,147 @@
-<p>daily-transaction works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card shadow">
+                <div class="card-body">
+                    <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card form-card">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <mat-form-field appearance="outline" class="w-100">
+                                        <mat-label>Choose a date</mat-label>
+                                        <input matInput [matDatepicker]="picker">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>Shift</mat-label>
+                                        <mat-select>
+                                            <mat-option value="one">Morning</mat-option>
+                                            <mat-option value="two">evening</mat-option>
+                                            <mat-option value="two">Night</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Account Number</mat-label>
+                                        <input matInput placeholder="Account Number">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Custmer Name</mat-label>
+                                        <input matInput placeholder="Custmer Name">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-4">
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>Route</mat-label>
+                                        <mat-select>
+                                            <mat-option value="one">Swargate</mat-option>
+                                            <mat-option value="two">Balaji Nagar</mat-option>
+                                            <mat-option value="two">Dhankawdi</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-sm-4">
+                                        Account Type
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <mat-radio-group class="d-block">
+                                            <mat-radio-button value="1">Cow</mat-radio-button>
+                                            <mat-radio-button value="2" class="ms-2">Buffalo</mat-radio-button>
+                                          </mat-radio-group>
+                                          
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Card Name</mat-label>
+                                        <input matInput placeholder="Card Name">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card form-card">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Quantity</mat-label>
+                                        <input matInput placeholder="Quantity">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>FAT</mat-label>
+                                        <input matInput placeholder="FAT">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>SNF</mat-label>
+                                        <input matInput placeholder="SNF">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                    <section class="example-section">
+                                        <mat-checkbox class="example-margin"></mat-checkbox>
+                                      </section>
+                                    <mat-form-field class="w-100 ms-2" appearance="outline">
+                                        <mat-label>CLR(Degree)</mat-label>
+                                        <input matInput placeholder="CLR(Degree)">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                    <section class="example-section">
+                                        <mat-checkbox class="example-margin"></mat-checkbox>
+                                      </section>
+                                    <mat-form-field class="w-100 ms-2" appearance="outline">
+                                        <mat-label>Added Water</mat-label>
+                                        <input matInput placeholder="Added Wate">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Fat Rate(RS)</mat-label>
+                                        <input matInput placeholder="Fat Rate(RS)">
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-2">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Billable Amount (RS)</mat-label>
+                                        <input matInput placeholder="Billable Amount (RS)">
+                                    </mat-form-field>
+                                </div>
+                                <div class="d-flex justify-content-between mb-0">
+                                    <button mat-stroked-button class="btn-main-outline">clear</button>
+                                    <button mat-stroked-button class="btn-main">Save</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card form-card">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="legacy">
+                                        <mat-label>Enter Address</mat-label>
+                                        <textarea matInput placeholder="Enter Address" rows="4"></textarea>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

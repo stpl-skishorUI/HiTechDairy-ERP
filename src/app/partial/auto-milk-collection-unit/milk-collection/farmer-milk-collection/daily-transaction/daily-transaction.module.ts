@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DailyTransactionRoutingModule } from './daily-transaction-routing.module';
 import { DailyTransactionComponent } from './daily-transaction.component';
-
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { DailyTransactionComponent } from './daily-transaction.component';
   ],
   imports: [
     CommonModule,
-    DailyTransactionRoutingModule
+    DailyTransactionRoutingModule,
+    MaterialModule
   ]
 })
 export class DailyTransactionModule { }
