@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DeleteAllBillsRoutingModule } from './delete-all-bills-routing.module';
 import { DeleteAllBillsComponent } from './delete-all-bills.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { DeleteAllBillsComponent } from './delete-all-bills.component';
   ],
   imports: [
     CommonModule,
-    DeleteAllBillsRoutingModule
+    DeleteAllBillsRoutingModule,
+    MaterialModule
   ]
 })
 export class DeleteAllBillsModule { }
