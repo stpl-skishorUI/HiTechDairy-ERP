@@ -196,6 +196,46 @@ export class SidebarService {
         }     
       ]
     },
+    {
+      title: 'Milk Collection',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Daily Transaction',
+          url:'daily-transaction'
+        },
+        {
+          title: 'Milk Collection List',
+          url:'milk-collection-list'
+        },
+        {
+          title: 'Doc Milk Collection',
+          url:'doc-milk-collection'
+        }   
+      ]
+    },
+    {
+      title: 'Milk Billing',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Milk Purchase Bill',
+          url:'milk-purchase-bill'
+        },
+        {
+          title: 'Bulk Bill Calculation',
+          url:'bulk-bill-calculation'
+        },
+        {
+          title: 'Delete All Bills',
+          url:'delete-all-bills'
+        }   
+      ]
+    },
 
   ];
   constructor() { }

@@ -21,7 +21,7 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'branch-registration', loadChildren: () => import('../../partial/HRMS/masters/branch-registration/branch-registration.module').then(m => m.BranchRegistrationModule) },
   { path: 'department-registration', loadChildren: () => import('../../partial/HRMS/masters/department-registration/department-registration.module').then(m => m.DepartmentRegistrationModule) },
   { path: 'designation-register', loadChildren: () => import('../../partial/HRMS/masters/designation-register/designation-register.module').then(m => m.DesignationRegisterModule) },
-  { path: 'bank-register', loadChildren: () => import('../../partial/HRMS/masters/bank-register/bank-register.module').then(m => m.BankRegisterModule) },  
+  { path: 'bank-register', loadChildren: () => import('../../partial/HRMS/masters/bank-register/bank-register.module').then(m => m.BankRegisterModule) },
 
 
   // AMCU //////////////////////////////////////// 
@@ -40,8 +40,16 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'default-ratecard-assignment', loadChildren: () => import('../../partial/auto-milk-collection-unit/rate-card-master/default-ratecard-assignment/default-ratecard-assignment.module').then(m => m.DefaultRatecardAssignmentModule) },
   { path: 'additions-deductions-type', loadChildren: () => import('../../partial/auto-milk-collection-unit/rate-card-master/additions-deductions-type/additions-deductions-type.module').then(m => m.AdditionsDeductionsTypeModule) },
   { path: 'additions-deductions-charges', loadChildren: () => import('../../partial/auto-milk-collection-unit/rate-card-master/additions-deductions-charges/additions-deductions-charges.module').then(m => m.AdditionsDeductionsChargesModule) },
- 
+  // Milk Collection
+  { path: 'daily-transaction', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-collection/farmer-milk-collection/daily-transaction/daily-transaction.module').then(m => m.DailyTransactionModule) },
+  { path: 'milk-collection-list', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-collection/farmer-milk-collection/milk-collection-list/milk-collection-list.module').then(m => m.MilkCollectionListModule) },
+  { path: 'doc-milk-collection', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-collection/doc-milk-collection/doc-milk-collection.module').then(m => m.DocMilkCollectionModule) },
+  // Milk Billing
+  { path: 'milk-purchase-bill', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-billing/milk-purchase-bill/milk-purchase-bill.module').then(m => m.MilkPurchaseBillModule) },
+  { path: 'bulk-bill-calculation', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-billing/bulk-bill-calculation/bulk-bill-calculation.module').then(m => m.BulkBillCalculationModule) },
+  { path: 'delete-all-bills', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-billing/delete-all-bills/delete-all-bills.module').then(m => m.DeleteAllBillsModule) },
 
-  
+
+
   { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule), data: { title: 'Dashboard' } },
 ];
