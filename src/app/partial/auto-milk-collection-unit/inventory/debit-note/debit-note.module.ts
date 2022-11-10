@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DebitNoteRoutingModule } from './debit-note-routing.module';
 import { DebitNoteComponent } from './debit-note.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { DebitNoteComponent } from './debit-note.component';
   ],
   imports: [
     CommonModule,
-    DebitNoteRoutingModule
+    DebitNoteRoutingModule,
+    MaterialModule
   ]
 })
 export class DebitNoteModule { }

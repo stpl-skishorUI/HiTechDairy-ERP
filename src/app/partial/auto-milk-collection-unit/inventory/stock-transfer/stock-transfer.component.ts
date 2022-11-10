@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { SearchInventoryComponent } from '../search-inventory/search-inventory.component';
 
 @Component({
   selector: 'app-stock-transfer',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StockTransferComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+
+
+  Searchinventory(){
+    const dialogRef = this.dialog.open(SearchInventoryComponent,{
+      width: '500px',
+      });
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+  }
+
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','Action'];
   dataSource = ELEMENT_DATA;
 }
