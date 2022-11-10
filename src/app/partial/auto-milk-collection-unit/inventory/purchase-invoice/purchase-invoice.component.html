@@ -46,7 +46,7 @@
                                 <mat-datepicker #picker></mat-datepicker>
                             </mat-form-field>
                         </div>
-                        <div class="col-sm-auto">
+                        <div class="col-sm">
                             <mat-form-field class="w-100" appearance="outline">
                                 <mat-label>Invoice Number</mat-label>
                                 <input matInput placeholder="Enter Village Name">
@@ -79,9 +79,12 @@
                                 <input matInput placeholder="Enter Village Name">
                             </mat-form-field>
                         </div>
+                        <div class="col-sm-auto">
+                            <button mat-stroked-button class="btn-main">Submit</button>
+                        </div>
                     </div>
                     <div class="row mb-3">
-                        <div class="scrollbar">
+                        <div class="scrollbar table-10row-height">
                             <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
 
                                 <ng-container matColumnDef="srno">
