@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CreditNoteRoutingModule } from './credit-note-routing.module';
 import { CreditNoteComponent } from './credit-note.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CreditNoteComponent } from './credit-note.component';
   ],
   imports: [
     CommonModule,
-    CreditNoteRoutingModule
+    CreditNoteRoutingModule,
+    MaterialModule
   ]
 })
 export class CreditNoteModule { }
