@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { PurchaseInvoiceRoutingModule } from './purchase-invoice-routing.module';
 import { PurchaseInvoiceComponent } from './purchase-invoice.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { PurchaseInvoiceComponent } from './purchase-invoice.component';
   ],
   imports: [
     CommonModule,
-    PurchaseInvoiceRoutingModule
+    PurchaseInvoiceRoutingModule,
+    MaterialModule
   ]
 })
 export class PurchaseInvoiceModule { }
