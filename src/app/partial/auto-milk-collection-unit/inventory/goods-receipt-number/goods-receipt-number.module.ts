@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { GoodsReceiptNumberRoutingModule } from './goods-receipt-number-routing.module';
 import { GoodsReceiptNumberComponent } from './goods-receipt-number.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { GoodsReceiptNumberComponent } from './goods-receipt-number.component';
   ],
   imports: [
     CommonModule,
-    GoodsReceiptNumberRoutingModule
+    GoodsReceiptNumberRoutingModule,
+    MaterialModule
   ]
 })
 export class GoodsReceiptNumberModule { }
