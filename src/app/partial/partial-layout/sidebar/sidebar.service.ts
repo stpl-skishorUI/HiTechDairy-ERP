@@ -236,6 +236,42 @@ export class SidebarService {
         }   
       ]
     },
+    {
+      title: 'Inventory',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Purchase Order',
+          url:'purchase-order'
+        },
+        {
+          title: 'GRN',
+          url:'grn'
+        },
+        {
+          title: 'Purchase Invoice',
+          url:'purchase-invoice'
+        },
+        {
+          title: 'Sales Invoice',
+          url:'sales-invoice'
+        },
+        {
+          title: 'Debit Note',
+          url:'debit-note'
+        },
+        {
+          title: 'Credit Note',
+          url:'credit-note'
+        },
+        {
+          title: 'Stock Transfer',
+          url:'stock-transfer'
+        }  
+      ]
+    },
 
   ];
   constructor() { }
