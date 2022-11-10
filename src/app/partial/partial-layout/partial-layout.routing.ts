@@ -50,7 +50,7 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'delete-all-bills', loadChildren: () => import('../../partial/auto-milk-collection-unit/milk-billing/delete-all-bills/delete-all-bills.module').then(m => m.DeleteAllBillsModule) },
   // Inventory
   { path: 'purchase-order', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/purchase-order/purchase-order.module').then(m => m.PurchaseOrderModule) },
-  { path: 'grn', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/grn/grn.module').then(m => m.GrnModule) },
+  { path: 'goods-receipt-number', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/goods-receipt-number/goods-receipt-number.module').then(m => m.GoodsReceiptNumberModule) },
   { path: 'purchase-invoice', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/purchase-invoice/purchase-invoice.module').then(m => m.PurchaseInvoiceModule) },
   { path: 'sales-invoice', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/sales-invoice/sales-invoice.module').then(m => m.SalesInvoiceModule) },
   { path: 'debit-note', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/debit-note/debit-note.module').then(m => m.DebitNoteModule) },

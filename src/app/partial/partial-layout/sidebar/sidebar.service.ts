@@ -247,8 +247,8 @@ export class SidebarService {
           url:'purchase-order'
         },
         {
-          title: 'GRN',
-          url:'grn'
+          title: 'Goods Receipt Number',
+          url:'goods-receipt-number'
         },
         {
           title: 'Purchase Invoice',
