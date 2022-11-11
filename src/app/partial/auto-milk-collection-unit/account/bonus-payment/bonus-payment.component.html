@@ -1,1 +1,161 @@
-<p>bonus-payment works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card plain-card">
+                <div class="card-header">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>From date</mat-label>
+                                <input matInput [matDatepicker]="picker" placeholder="From date">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-4">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>To date</mat-label>
+                                <input matInput [matDatepicker]="picker2" placeholder="To date">
+                                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                <mat-datepicker #picker2></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-4">
+                            <button mat-icon-button class="text-main">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-4">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Bonus date</mat-label>
+                                <input matInput [matDatepicker]="bonusdate" placeholder="From date">
+                                <mat-datepicker-toggle matSuffix [for]="bonusdate"></mat-datepicker-toggle>
+                                <mat-datepicker #bonusdate></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-4">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Cow Bonus</mat-label>
+                                <input matInput placeholder="Enter cow bonus in Rs/Litre">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-auto">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Buffalo Bonus</mat-label>
+                                <input matInput placeholder="Enter buffalo bonus in Rs/Litre">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm">
+                            <button mat-icon-button class="text-main ">
+                                <i class="fa-solid fa-file-excel"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="scrollbar table-10row-height">
+                            <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
+
+                                <ng-container matColumnDef="srno">
+                                    <th mat-header-cell *matHeaderCellDef> Sr. No. </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="party_name">
+                                    <th mat-header-cell *matHeaderCellDef> Party Name </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.party_name}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="retention_bonus">
+                                    <th mat-header-cell *matHeaderCellDef> Retention Bonus </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.retention_bonus}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="cow_milk">
+                                    <th mat-header-cell *matHeaderCellDef> Cow Milk </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.cow_milk}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="buffalo_milk">
+                                    <th mat-header-cell *matHeaderCellDef> Buffalo Milk </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.buffalo_milk}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="cow_bonus">
+                                    <th mat-header-cell *matHeaderCellDef> Cow Bonus </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.cow_bonus}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="buffalo_bonus">
+                                    <th mat-header-cell *matHeaderCellDef> Buffalo Bonus </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.buffalo_bonus}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="total_bonus">
+                                    <th mat-header-cell *matHeaderCellDef> Total Bonus </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.total_bonus}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="action">
+                                    <th mat-header-cell *matHeaderCellDef> Action </th>
+                                    <td mat-cell *matCellDef="let element">
+                                        <div class="d-flex">
+                                            <button mat-icon-button matTooltip="Edit">
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                            </button>
+                                            <button mat-icon-button matTooltip="Delete">
+                                                <span class="material-symbols-outlined text-danger">
+                                                    delete
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </ng-container>
+
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <div class="d-flex ">
+                                <div class="form-label">Retention Bonus :-</div>
+                                <div class="form-data">0</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="d-flex ">
+                                <div class="form-label">Cow Bonus :-</div>
+                                <div class="form-data">0</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="d-flex ">
+                                <div class="form-label">Buffalo Bonus :- </div>
+                                <div class="form-data"> 0</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="d-flex ">
+                                <div class="form-label">Total Bonus :-</div>
+                                <div class="form-data">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-between">
+
+                            <button mat-stroked-button class="btn-main-outline">Clear</button>
+                            <button mat-stroked-button class="btn-main">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
