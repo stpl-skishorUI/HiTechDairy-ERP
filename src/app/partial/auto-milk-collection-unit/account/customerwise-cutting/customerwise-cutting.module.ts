@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CustomerwiseCuttingRoutingModule } from './customerwise-cutting-routing.module';
 import { CustomerwiseCuttingComponent } from './customerwise-cutting.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CustomerwiseCuttingComponent } from './customerwise-cutting.component';
   ],
   imports: [
     CommonModule,
-    CustomerwiseCuttingRoutingModule
+    CustomerwiseCuttingRoutingModule,
+    MaterialModule
   ]
 })
 export class CustomerwiseCuttingModule { }
