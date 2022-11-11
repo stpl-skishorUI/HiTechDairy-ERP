@@ -11,5 +11,18 @@ export class BatchRegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  displayedColumns: string[] = ['srno', 'batch', 'batch_name_template','action'];
+  dataSource = ELEMENT_DATA;
 }
+
+export interface PeriodicElement {
+ srno: number;
+ batch: string;
+ batch_name_template: string;
+ action:any;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {srno:1,batch:'batch string',batch_name_template:'Btach template name',action:''},
+ 
+];
