@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MilkBagProductionRoutingModule } from './milk-bag-production-routing.module';
 import { MilkBagProductionComponent } from './milk-bag-production.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MilkBagProductionComponent } from './milk-bag-production.component';
   ],
   imports: [
     CommonModule,
-    MilkBagProductionRoutingModule
+    MilkBagProductionRoutingModule,
+    MaterialModule
   ]
 })
 export class MilkBagProductionModule { }
