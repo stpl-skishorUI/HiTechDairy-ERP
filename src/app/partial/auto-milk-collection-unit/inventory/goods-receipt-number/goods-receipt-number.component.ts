@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { SearchInventoryComponent } from '../search-inventory/search-inventory.component';
+import { SearchComponent } from 'src/app/partial/dialogs/search/search.component';
 
 @Component({
   selector: 'app-goods-receipt-number',
@@ -18,7 +18,7 @@ export class GoodsReceiptNumberComponent implements OnInit {
 
 
   searchinventory(){
-    const dialogRef = this.dialog.open(SearchInventoryComponent,{
+    const dialogRef = this.dialog.open(SearchComponent,{
       width: '500px',
       });
       dialogRef.afterClosed().subscribe(result => {

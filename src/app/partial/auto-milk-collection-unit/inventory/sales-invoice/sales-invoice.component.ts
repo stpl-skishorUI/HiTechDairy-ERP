@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { SearchInventoryComponent } from '../search-inventory/search-inventory.component';
+import { SearchComponent } from 'src/app/partial/dialogs/search/search.component';
 
 
 @Component({
@@ -19,7 +19,7 @@ export class SalesInvoiceComponent implements OnInit {
   dataSource = ELEMENT_DATA;
 
   searchinventory(){
-    const dialogRef = this.dialog.open(SearchInventoryComponent,{
+    const dialogRef = this.dialog.open(SearchComponent,{
       width: '500px',
       });
       dialogRef.afterClosed().subscribe(result => {
