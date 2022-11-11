@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { GroupPaymentRoutingModule } from './group-payment-routing.module';
 import { GroupPaymentComponent } from './group-payment.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { GroupPaymentComponent } from './group-payment.component';
   ],
   imports: [
     CommonModule,
-    GroupPaymentRoutingModule
+    GroupPaymentRoutingModule,
+    MaterialModule
   ]
 })
 export class GroupPaymentModule { }
