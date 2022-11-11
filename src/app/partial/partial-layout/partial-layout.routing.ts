@@ -67,6 +67,7 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'milk-bag-production', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/milk-bag-production/milk-bag-production.module').then(m => m.MilkBagProductionModule) },
   { path: 'batch-template', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-template/batch-template.module').then(m => m.BatchTemplateModule) },
   { path: 'batch-process', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-process/batch-process.module').then(m => m.BatchProcessModule) },
+  { path: 'batch-register', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-register/batch-register.module').then(m => m.BatchRegisterModule) },
 
 
   { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule), data: { title: 'Dashboard' } },

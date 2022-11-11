@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BatchProcessRoutingModule } from './batch-process-routing.module';
 import { BatchProcessComponent } from './batch-process.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BatchProcessComponent } from './batch-process.component';
   ],
   imports: [
     CommonModule,
-    BatchProcessRoutingModule
+    BatchProcessRoutingModule,
+    MaterialModule
   ]
 })
 export class BatchProcessModule { }

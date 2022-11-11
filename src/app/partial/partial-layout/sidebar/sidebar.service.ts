@@ -321,6 +321,10 @@ export class SidebarService {
         {
           title: 'Batch Process',
           url:'batch-process'
+        },
+        {
+          title: 'Batch Register',
+          url:'batch-register'
         }
       ]
     },

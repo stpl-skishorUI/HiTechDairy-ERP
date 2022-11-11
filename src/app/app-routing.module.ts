@@ -19,6 +19,7 @@ const routes: Routes = [
       { path: '', loadChildren: () => import('./partial/partial-layout/partial-layout.module').then(m => m.PartialLayoutModule), data: { title: 'Login' } },
     ]
   },
+  { path: 'batch-register', loadChildren: () => import('./partial/auto-milk-collection-unit/dairy-production/byproducts/batch-register/batch-register.module').then(m => m.BatchRegisterModule) },
   
     
 ];
