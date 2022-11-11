@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AccountManagementRoutingModule } from './account-management-routing.module';
 import { AccountManagementComponent } from './account-management.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AccountManagementComponent } from './account-management.component';
   ],
   imports: [
     CommonModule,
-    AccountManagementRoutingModule
+    AccountManagementRoutingModule,
+    MaterialModule
   ]
 })
 export class AccountManagementModule { }
