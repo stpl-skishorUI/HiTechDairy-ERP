@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BatchTemplateRoutingModule } from './batch-template-routing.module';
 import { BatchTemplateComponent } from './batch-template.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BatchTemplateComponent } from './batch-template.component';
   ],
   imports: [
     CommonModule,
-    BatchTemplateRoutingModule
+    BatchTemplateRoutingModule,
+    MaterialModule
   ]
 })
 export class BatchTemplateModule { }
