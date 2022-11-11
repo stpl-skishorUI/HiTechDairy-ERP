@@ -17,6 +17,7 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { SearchInventoryComponent } from './partial/auto-milk-collection-unit/inventory/search-inventory/search-inventory.component';
+import { SearchComponent } from './partial/dialogs/search/search.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -28,7 +29,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
-    SearchInventoryComponent
+    SearchInventoryComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

@@ -56,7 +56,17 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'debit-note', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/debit-note/debit-note.module').then(m => m.DebitNoteModule) },
   { path: 'credit-note', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/credit-note/credit-note.module').then(m => m.CreditNoteModule) },
   { path: 'stock-transfer', loadChildren: () => import('../../partial/auto-milk-collection-unit/inventory/stock-transfer/stock-transfer.module').then(m => m.StockTransferModule) },
-  
+  // Account
+  { path: 'opening-balance', loadChildren: () => import('../../partial/auto-milk-collection-unit/account/opening-balance/opening-balance.module').then(m => m.OpeningBalanceModule) },
+  { path: 'customerwise-cutting', loadChildren: () => import('../../partial/auto-milk-collection-unit/account/customerwise-cutting/customerwise-cutting.module').then(m => m.CustomerwiseCuttingModule) },
+  { path: 'partywise-material-rate', loadChildren: () => import('../../partial/auto-milk-collection-unit/account/partywise-material-rate/partywise-material-rate.module').then(m => m.PartywiseMaterialRateModule) },
+  { path: 'group-payment', loadChildren: () => import('../../partial/auto-milk-collection-unit/account/group-payment/group-payment.module').then(m => m.GroupPaymentModule) },
+  { path: 'account-management', loadChildren: () => import('../../partial/auto-milk-collection-unit/account/account-management/account-management.module').then(m => m.AccountManagementModule) },
+  { path: 'bonus-payment', loadChildren: () => import('../../partial/auto-milk-collection-unit/account/bonus-payment/bonus-payment.module').then(m => m.BonusPaymentModule) },
+  // Dairy Production
+  { path: 'milk-bag-production', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/milk-bag-production/milk-bag-production.module').then(m => m.MilkBagProductionModule) },
+  { path: 'batch-template', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-template/batch-template.module').then(m => m.BatchTemplateModule) },
+  { path: 'batch-process', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-process/batch-process.module').then(m => m.BatchProcessModule) },
 
 
   { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule), data: { title: 'Dashboard' } },

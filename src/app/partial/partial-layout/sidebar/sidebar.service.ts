@@ -272,6 +272,58 @@ export class SidebarService {
         }  
       ]
     },
+    {
+      title: 'Account',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Opening Balance',
+          url:'opening-balance'
+        },
+        {
+          title: 'Customerwise Cutting',
+          url:'customerwise-cutting'
+        },
+        {
+          title: 'Partywise Material Rate',
+          url:'partywise-material-rate'
+        },
+        {
+          title: 'Group Payment',
+          url:'group-payment'
+        },
+        {
+          title: 'Account Management',
+          url:'account-management'
+        },
+        {
+          title: 'Bonus Payment',
+          url:'bonus-payment'
+        }
+      ]
+    },
+    {
+      title: 'Dairy Production',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Milk Bag Production',
+          url:'milk-bag-production'
+        },
+        {
+          title: 'Batch Template',
+          url:'batch-template'
+        },
+        {
+          title: 'Batch Process',
+          url:'batch-process'
+        }
+      ]
+    },
 
   ];
   constructor() { }
