@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { OpeningBalanceRoutingModule } from './opening-balance-routing.module';
 import { OpeningBalanceComponent } from './opening-balance.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { OpeningBalanceComponent } from './opening-balance.component';
   ],
   imports: [
     CommonModule,
-    OpeningBalanceRoutingModule
+    OpeningBalanceRoutingModule,
+    MaterialModule
   ]
 })
 export class OpeningBalanceModule { }

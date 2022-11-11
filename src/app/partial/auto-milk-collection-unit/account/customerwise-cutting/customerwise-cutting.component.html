@@ -1,1 +1,133 @@
-<p>customerwise-cutting works!</p>
+<div class="container-fluid">
+    <div class="col-sm-12">
+        <div class="card plain-card shadow">
+            <div class="card-header">
+                <div class="mb-0 text-end">
+                    <button mat-icon-button class="text-main ">
+                        <span class="material-symbols-outlined">
+                            search
+                            </span>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="scrollbar table-10row-height mb-3">
+                            <table mat-table [dataSource]="dataSource" class="dashboard-table">
+                                <ng-container matColumnDef="position">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr. No. </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="name">
+                                    <th mat-header-cell *matHeaderCellDef>Material Name</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="weight">
+                                    <th mat-header-cell *matHeaderCellDef>Outward QTY </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="symbol">
+                                    <th mat-header-cell *matHeaderCellDef>Unit</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="Action">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width">Action </th>
+                                    <td mat-cell *matCellDef="let element">
+                                        <div class="d-flex">
+                                            <button mat-icon-button matTooltip="Edit">
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                            </button>
+                                            <button mat-icon-button matTooltip="Delete">
+                                                <span class="material-symbols-outlined text-danger">
+                                                    delete
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </ng-container>
+
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
+                        </div>
+                        <div class="mb-3">
+                            <mat-form-field class="w-100" appearance="legacy">
+                                <mat-label>Remark</mat-label>
+                                <textarea matInput placeholder="Remark" rows="4"></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card form-card">
+                            <div class="card-header">
+                                Custmer Wise Cutting
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>Form Department</mat-label>
+                                        <mat-select>
+                                            <mat-option value="one">Morning</mat-option>
+                                            <mat-option value="two">evening</mat-option>
+                                            <mat-option value="two">Night</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>To Department</mat-label>
+                                        <mat-select>
+                                            <mat-option value="one">Morning</mat-option>
+                                            <mat-option value="two">evening</mat-option>
+                                            <mat-option value="two">Night</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field appearance="outline" class="w-100">
+                                        <mat-label>Transfer Date</mat-label>
+                                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                    </mat-form-field>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <mat-form-field appearance="outline" class="w-100 ">
+                                        <mat-label>Material Name</mat-label>
+                                        <mat-select>
+                                            <mat-option value="one">Morning</mat-option>
+                                            <mat-option value="two">evening</mat-option>
+                                            <mat-option value="two">Night</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="mb-3">
+                                    <mat-form-field class="w-100" appearance="outline">
+                                        <mat-label>Quantity</mat-label>
+                                        <input matInput placeholder="Quantity">
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="d-flex justify-content-between mb-3">
+                                    <button mat-stroked-button class="btn-main-outline">Clear</button>
+                                    <button mat-stroked-button class="btn-main">Save</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
