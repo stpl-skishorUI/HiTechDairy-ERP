@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DailyPrintReportRoutingModule } from './daily-print-report-routing.module';
 import { DailyPrintReportComponent } from './daily-print-report.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { DailyPrintReportComponent } from './daily-print-report.component';
   ],
   imports: [
     CommonModule,
-    DailyPrintReportRoutingModule
+    DailyPrintReportRoutingModule,
+    MaterialModule
   ]
 })
 export class DailyPrintReportModule { }
