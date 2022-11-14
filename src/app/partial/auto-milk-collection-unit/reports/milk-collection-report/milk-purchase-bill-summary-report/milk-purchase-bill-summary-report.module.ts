@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MilkPurchaseBillSummaryReportRoutingModule } from './milk-purchase-bill-summary-report-routing.module';
 import { MilkPurchaseBillSummaryReportComponent } from './milk-purchase-bill-summary-report.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MilkPurchaseBillSummaryReportComponent } from './milk-purchase-bill-sum
   ],
   imports: [
     CommonModule,
-    MilkPurchaseBillSummaryReportRoutingModule
+    MilkPurchaseBillSummaryReportRoutingModule,
+    MaterialModule
   ]
 })
 export class MilkPurchaseBillSummaryReportModule { }
