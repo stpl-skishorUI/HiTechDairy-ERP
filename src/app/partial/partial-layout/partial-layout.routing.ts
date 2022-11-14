@@ -68,7 +68,18 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'batch-template', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-template/batch-template.module').then(m => m.BatchTemplateModule) },
   { path: 'batch-process', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-process/batch-process.module').then(m => m.BatchProcessModule) },
   { path: 'batch-register', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-register/batch-register.module').then(m => m.BatchRegisterModule) },
-
+  // Reports
+  { path: 'batch-register', loadChildren: () => import('../../partial/auto-milk-collection-unit/dairy-production/byproducts/batch-register/batch-register.module').then(m => m.BatchRegisterModule) },
+  { path: 'customer-bill-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/milk-collection-report/customer-bill-report/customer-bill-report.module').then(m => m.CustomerBillReportModule) },
+  { path: 'daily-print-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/milk-collection-report/daily-print-report/daily-print-report.module').then(m => m.DailyPrintReportModule) },
+  { path: 'milk-collection-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/milk-collection-report/milk-collection-report/milk-collection-report.module').then(m => m.MilkCollectionReportModule) },
+  { path: 'milk-purchase-bill-summary-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/milk-collection-report/milk-purchase-bill-summary-report/milk-purchase-bill-summary-report.module').then(m => m.MilkPurchaseBillSummaryReportModule) },
+  { path: 'irregular-customer-list-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/milk-collection-report/irregular-customer-list-report/irregular-customer-list-report.module').then(m => m.IrregularCustomerListReportModule) },
+  { path: 'advance-summary-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/accounting-report/advance-summary-report/advance-summary-report.module').then(m => m.AdvanceSummaryReportModule) },
+  { path: 'ledger-summary-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/accounting-report/ledger-summary-report/ledger-summary-report.module').then(m => m.LedgerSummaryReportModule) },
+  { path: 'fodder-summary-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/accounting-report/fodder-summary-report/fodder-summary-report.module').then(m => m.FodderSummaryReportModule) },
+  { path: 'godown-stock-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/stock-report/godown-stock-report/godown-stock-report.module').then(m => m.GodownStockReportModule) },
+  { path: 'invoice-report', loadChildren: () => import('../../partial/auto-milk-collection-unit/reports/sale-purchase-report/invoice-report/invoice-report.module').then(m => m.InvoiceReportModule) },
 
   { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule), data: { title: 'Dashboard' } },
 ];

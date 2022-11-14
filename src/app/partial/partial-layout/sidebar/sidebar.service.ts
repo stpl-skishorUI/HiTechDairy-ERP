@@ -328,7 +328,54 @@ export class SidebarService {
         }
       ]
     },
-
+    {
+      title: 'Reports',
+      icon: 'fa fa-tachometer-alt',
+      active: false,
+      type: 'dropdown',
+      submenus: [
+        {
+          title: 'Customer Bill Report',
+          url:'customer-bill-report'
+        },
+        {
+          title: 'Daily Print Report',
+          url:'daily-print-report'
+        },
+        {
+          title: 'Milk Collection Report',
+          url:'milk-collection-report'
+        },
+        {
+          title: 'Milk Purchase Bill Summary',
+          url:'milk-purchase-bill-summary-report'
+        },
+        {
+          title: 'Irregular Customer List',
+          url:'irregular-customer-list-report'
+        },
+        {
+          title: 'Advance Summary Report',
+          url:'advance-summary-report'
+        },
+        {
+          title: 'Ledger Summary Report',
+          url:'ledger-summary-report'
+        },
+        {
+          title: 'Fodder Summary Report',
+          url:'fodder-summary-report'
+        },
+        {
+          title: 'Godown Stock Report',
+          url:'godown-stock-report'
+        },
+        {
+          title: 'Invoice Report',
+          url:'invoice-report'
+        }
+      ]
+    },
   ];
   constructor() { }
 
