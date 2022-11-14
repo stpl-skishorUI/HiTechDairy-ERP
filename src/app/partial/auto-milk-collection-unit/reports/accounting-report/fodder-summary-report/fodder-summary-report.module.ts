@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FodderSummaryReportRoutingModule } from './fodder-summary-report-routing.module';
 import { FodderSummaryReportComponent } from './fodder-summary-report.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { FodderSummaryReportComponent } from './fodder-summary-report.component'
   ],
   imports: [
     CommonModule,
-    FodderSummaryReportRoutingModule
+    FodderSummaryReportRoutingModule,
+    MaterialModule
   ]
 })
 export class FodderSummaryReportModule { }
