@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CustomerBillReportRoutingModule } from './customer-bill-report-routing.module';
 import { CustomerBillReportComponent } from './customer-bill-report.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CustomerBillReportComponent } from './customer-bill-report.component';
   ],
   imports: [
     CommonModule,
-    CustomerBillReportRoutingModule
+    CustomerBillReportRoutingModule,
+    MaterialModule
   ]
 })
 export class CustomerBillReportModule { }
