@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdvanceSummaryReportRoutingModule } from './advance-summary-report-routing.module';
 import { AdvanceSummaryReportComponent } from './advance-summary-report.component';
+import { MaterialModule } from 'src/app/shared/angularMaterialModule/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AdvanceSummaryReportComponent } from './advance-summary-report.componen
   ],
   imports: [
     CommonModule,
-    AdvanceSummaryReportRoutingModule
+    AdvanceSummaryReportRoutingModule,
+    MaterialModule
   ]
 })
 export class AdvanceSummaryReportModule { }
