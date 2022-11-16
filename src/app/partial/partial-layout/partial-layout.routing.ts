@@ -22,7 +22,8 @@ export const PartialLayoutRoutes: Routes = [
   { path: 'department-registration', loadChildren: () => import('../../partial/HRMS/masters/department-registration/department-registration.module').then(m => m.DepartmentRegistrationModule) },
   { path: 'designation-register', loadChildren: () => import('../../partial/HRMS/masters/designation-register/designation-register.module').then(m => m.DesignationRegisterModule) },
   { path: 'bank-register', loadChildren: () => import('../../partial/HRMS/masters/bank-register/bank-register.module').then(m => m.BankRegisterModule) },
-
+  { path: 'employee-register', loadChildren: () => import('../../partial/HRMS/masters/employee-register/employee-register.module').then(m => m.EmployeeRegisterModule) },
+  { path: 'employee-list', loadChildren: () => import('../../partial/HRMS/masters/employee-list/employee-list.module').then(m => m.EmployeeListModule) },
 
   // AMCU //////////////////////////////////////// 
   // Master

@@ -104,6 +104,14 @@ export class SidebarService {
           url:'organization-register'
         },
         {
+          title: 'Employee Register',
+          url:'employee-register'
+        },
+        {
+          title: 'Employee List',
+          url:'employee-list'
+        },
+        {
           title: 'Company Register',
           url:'company-register'
         },
