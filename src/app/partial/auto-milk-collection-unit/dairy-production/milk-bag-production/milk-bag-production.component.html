@@ -4,154 +4,155 @@
             <div class="card plain-card">
                 <div class="card-header">
                     <div class="col-sm text-end">
-                        <button mat-icon-button class="text-main">
+                        <button mat-stroked-button class="text-main">
                             <span class="material-symbols-outlined">
                                 search
-                                </span>
-                            </button>
+                            </span>
+                            Search Milk Bag Production
+                        </button>
                     </div>
                 </div>
                 <div class="card-body">
-                        <div class="row mb-3 gx-2">
-                            <div class="col-sm-3">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label> Batch Date</mat-label>
-                                    <input matInput [matDatepicker]="Siker" placeholder="Choose a date">
-                                    <mat-datepicker-toggle matSuffix [for]="Siker"></mat-datepicker-toggle>
-                                    <mat-datepicker #Siker></mat-datepicker>
-                                </mat-form-field>
-                            </div>
-                            <div class="col-sm-3">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label>Batch Name</mat-label>
-                                    <input matInput placeholder="Batch Name">
-                                </mat-form-field>
-                            </div>
-                            <div class="col-sm-4">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label> Account Type</mat-label>
-                                    <mat-select>
-                                        <mat-option>Option 1</mat-option>
-                                        <mat-option>Option 2</mat-option>
-                                        <mat-option>Option 3</mat-option>
-                                    </mat-select>
-                                </mat-form-field>
-                            </div>
-                            <div class="col-sm-2">
-                                <div class="form-label">
-                                    0 Ltr
-                                </div>
+                    <div class="row mb-3 gx-2 align-items-center">
+                        <div class="col-sm-3">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label> Batch Date</mat-label>
+                                <input matInput [matDatepicker]="Siker" placeholder="Choose a date">
+                                <mat-datepicker-toggle matSuffix [for]="Siker"></mat-datepicker-toggle>
+                                <mat-datepicker #Siker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-3">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Batch Name</mat-label>
+                                <input matInput placeholder="Batch Name">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-4">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label> Account Type</mat-label>
+                                <mat-select>
+                                    <mat-option>Option 1</mat-option>
+                                    <mat-option>Option 2</mat-option>
+                                    <mat-option>Option 3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-label">
+                                0 Ltr
                             </div>
                         </div>
-                        <div class="row gx-2 mb-3 align-items-center">
-                            <div class="col-sm-3">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label> Packaged Milk</mat-label>
-                                    <mat-select>
-                                        <mat-option>Option 1</mat-option>
-                                        <mat-option>Option 2</mat-option>
-                                        <mat-option>Option 3</mat-option>
-                                    </mat-select>
-                                </mat-form-field>
-                            </div>
-                        
-                            <div class="col-sm-3">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label>Quantity</mat-label>
-                                    <input matInput placeholder="Quantity">
-                                </mat-form-field>
-                            </div>
-                            <div class="col-sm-2">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label>Fat</mat-label>
-                                    <input matInput placeholder="Fat">
-                                </mat-form-field>
-                            </div>
-                            <div class="col-sm-2">
-                                <mat-form-field appearance="outline" class="w-100">
-                                    <mat-label>SNF</mat-label>
-                                    <input matInput placeholder="SNF">
-                                </mat-form-field>
-                            </div>
-                           
-                            <div class="col-sm-2">
-                                <button mat-stroked-button class="btn-main">Submit</button>
-                            </div>
-                            
+                    </div>
+                    <div class="row gx-2 mb-3 align-items-center">
+                        <div class="col-sm-3">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label> Packaged Milk</mat-label>
+                                <mat-select>
+                                    <mat-option>Option 1</mat-option>
+                                    <mat-option>Option 2</mat-option>
+                                    <mat-option>Option 3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
                         </div>
-                        <div class="row mb-3">
-                            <div class="scrollbar table-10row-height">
-                                <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
 
-                                    <ng-container matColumnDef="srno">
-                                        <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr. No. </th>
-                                        <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
-                                    </ng-container>
+                        <div class="col-sm-3">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Quantity</mat-label>
+                                <input matInput placeholder="Quantity">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Fat</mat-label>
+                                <input matInput placeholder="Fat">
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>SNF</mat-label>
+                                <input matInput placeholder="SNF">
+                            </mat-form-field>
+                        </div>
 
-                                    <ng-container matColumnDef="material_name">
-                                        <th mat-header-cell *matHeaderCellDef> Account Type </th>
-                                        <td mat-cell *matCellDef="let element"> {{element.material_name}} </td>
-                                    </ng-container>
+                        <div class="col-sm-2">
+                            <button mat-stroked-button class="btn-main">Submit</button>
+                        </div>
 
-                                    <ng-container matColumnDef="hsn">
-                                        <th mat-header-cell *matHeaderCellDef> Packegad Milk</th>
-                                        <td mat-cell *matCellDef="let element"> {{element.hsn}} </td>
-                                    </ng-container>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="scrollbar table-10row-height">
+                            <table mat-table [dataSource]="dataSource" class="w-100 dashboard-table">
 
-                                    <ng-container matColumnDef="quantity">
-                                        <th mat-header-cell *matHeaderCellDef> Quantity</th>
-                                        <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
-                                    </ng-container>
-                                    <ng-container matColumnDef="unit">
-                                        <th mat-header-cell *matHeaderCellDef>FAT</th>
-                                        <td mat-cell *matCellDef="let element"> {{element.unit}} </td>
-                                    </ng-container>
-                                    <ng-container matColumnDef="rate">
-                                        <th mat-header-cell *matHeaderCellDef> SNF</th>
-                                        <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
-                                    </ng-container>
-                                  
-                                    <ng-container matColumnDef="action">
-                                        <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
-                                        <td mat-cell *matCellDef="let element">
-                                            <div class="d-flex">
-                                                <button mat-icon-button matTooltip="Edit">
-                                                    <span class="material-symbols-outlined">
-                                                        edit
-                                                    </span>
-                                                </button>
-                                                <button mat-icon-button matTooltip="Delete">
-                                                    <span class="material-symbols-outlined text-danger">
-                                                        delete
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </ng-container>
-                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                                </table>
+                                <ng-container matColumnDef="srno">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Sr. No. </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.srno}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="material_name">
+                                    <th mat-header-cell *matHeaderCellDef> Account Type </th>
+                                    <td mat-cell *matCellDef="let element"> {{element.material_name}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="hsn">
+                                    <th mat-header-cell *matHeaderCellDef> Packged Milk</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.hsn}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="quantity">
+                                    <th mat-header-cell *matHeaderCellDef> Quantity</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="unit">
+                                    <th mat-header-cell *matHeaderCellDef>FAT</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.unit}} </td>
+                                </ng-container>
+                                <ng-container matColumnDef="rate">
+                                    <th mat-header-cell *matHeaderCellDef> SNF</th>
+                                    <td mat-cell *matCellDef="let element"> {{element.rate}} </td>
+                                </ng-container>
+
+                                <ng-container matColumnDef="action">
+                                    <th mat-header-cell *matHeaderCellDef class="srno-width"> Action </th>
+                                    <td mat-cell *matCellDef="let element">
+                                        <div class="d-flex">
+                                            <button mat-icon-button matTooltip="Edit">
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                            </button>
+                                            <button mat-icon-button matTooltip="Delete">
+                                                <span class="material-symbols-outlined text-danger">
+                                                    delete
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </ng-container>
+                                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <mat-form-field class="w-100" appearance="legacy">
+                                    <mat-label>Remark</mat-label>
+                                    <textarea matInput placeholder="Remark" rows="4"></textarea>
+                                </mat-form-field>
                             </div>
                         </div>
-                        <div class="row align-items-center">    
-                            <div class="col-sm-6">
-                                <div class="mb-3">
-                                    <mat-form-field class="w-100" appearance="legacy">
-                                        <mat-label>Remark</mat-label>
-                                        <textarea matInput placeholder="Remark" rows="4"></textarea>
-                                    </mat-form-field>
-                                </div>
-                            </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <button mat-stroked-button class="btn-main-outline">Clear</button>
                         </div>
-                            
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <button mat-stroked-button class="btn-main-outline">Clear</button>
-                                </div>
-                                <div>
-                                    <button mat-stroked-button class="btn-main">Submit</button>
-                                </div>
+                        <div>
+                            <button mat-stroked-button class="btn-main">Submit</button>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
