@@ -13,7 +13,7 @@
             </div>
             <div class="card-body">
                <div class="col-sm-12">
-                <div class="row mb-3">
+                <div class="row mb-3 align-items-center">
                     <div class="col-sm-3">
                         <mat-form-field appearance="outline" class="w-100 ">
                             <mat-label>Party Name</mat-label>
@@ -41,18 +41,10 @@
                         </mat-form-field>
                     </div>
                     <div class="col-sm-2">
-                        <mat-form-field appearance="outline" class="w-100">
-                            <mat-label>Invoice Date</mat-label>
-                            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker #picker></mat-datepicker>
-                        </mat-form-field>
+                        <div class="form-label me-3">Invoice Date</div>
                     </div>
                     <div class="col-sm-3">
-                        <mat-form-field class="w-100" appearance="outline">
-                            <mat-label>PO Number</mat-label>
-                            <input matInput placeholder="PO Number">
-                        </mat-form-field>
+                        <div class="form-label me-3">Po Number</div>
                     </div>
                 </div>
                 <div class="row mb-3">
