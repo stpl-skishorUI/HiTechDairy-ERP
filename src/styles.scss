@@ -33,7 +33,7 @@ body { margin: 0; font-family: 'Inter', sans-serif;background-color: #F6F5F7;}
   {
     --main-color:rgb(32, 101, 174);
     --main-light-color:rgb(230, 242, 255);
-    --main-dark-color:rgb(3, 65, 131);
+    --main-dark-color:rgb(21, 65, 113);
   }
 .text-main{
   color: var(--main-color);
@@ -56,30 +56,30 @@ body { margin: 0; font-family: 'Inter', sans-serif;background-color: #F6F5F7;}
 }
 .btn-main-outline{
   font-family: 'Inter', sans-serif;
-  color:var(--main-color);
-  background-color: var(--main-light-color);
+  color:var(--main-color) !important;
+  background-color: var(--main-light-color) !important;
   border:solid 1px var(--main-light-color) !important;
 }
 .text-main-dark{
-  color: var(--main-dark-color);
+  color: var(--main-dark-color !important);
 }
 .bg-main-dark{
-  background-color:var(--main-dark-color);
+  background-color:var(--main-dark-color) !important;
   color: #fff;
 }
 .btn-main-dark{
-  background-color:var(--main-dark-color);
-  color: #fff;
-  border:solid 1px var(--main-dark-color);
+  background-color:var(--main-dark-color) !important;
+  color: #fff  !important;
+  border:solid 1px var(--main-dark-color) !important;
 }
 .btn-main-dark:focus:not(:focus-visible),
 .btn-main-dark.show,
 .btn-main-dark:focus-visible,
 .btn-main-dark:active,
 .btn-main-dark:hover{
-  background-color:var(--main-dark-color);
-  color: #fff;
-  border:solid 1px var(--main-dark-color);
+  background-color:var(--main-dark-color) !important;
+  color: #fff  !important;
+  border:solid 1px var(--main-dark-color) !important;
 }
 .plain-card,
 .dashboard-table,
