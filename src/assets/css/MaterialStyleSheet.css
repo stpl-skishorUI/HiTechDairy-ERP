@@ -10,7 +10,7 @@ textarea.mat-input-element,
 .mat-calendar-body-label,
 .mat-calendar-period-button,
 .mat-tab-label-content{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
 }
 .mat-form-field-flex{
@@ -54,7 +54,7 @@ transform: translateY(-1.1em) scale(.75);
     padding:0 !important;
 } */
 .mat-dialog-container .mat-dialog-title{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     display:flex;
     align-items: center;
     width: 100%;
@@ -63,7 +63,7 @@ transform: translateY(-1.1em) scale(.75);
     margin-bottom: 10px;
 }
 .mat-dialog-container .mat-dialog-content{    
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding-block: 15px;
 }
 .mat-dialog-container .mat-dialog-content input.mat-input-element{    

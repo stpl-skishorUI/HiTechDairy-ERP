@@ -3,7 +3,7 @@
 @import './assets/css/MaterialStyleSheet.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
+body { margin: 0; font-family: 'Inter', sans-serif;background-color: #F6F5F7;}
 .page-wrapper.toggled .sidebar {
   left: -300px;
 }
@@ -31,9 +31,9 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
 
   :root
   {
-    --main-color:rgb(68, 138, 255);
-    --main-light-color:rgb(231, 240, 255);
-    --main-dark-color:rgb(38, 110, 230);
+    --main-color:rgb(32, 101, 174);
+    --main-light-color:rgb(230, 242, 255);
+    --main-dark-color:rgb(3, 65, 131);
   }
 .text-main{
   color: var(--main-color);
@@ -41,10 +41,10 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
 .bg-main{
   background-color:var(--main-color);
   color: #fff;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .btn-main{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color:var(--main-color);
   color: #fff;
   border:solid 1px var(--main-color);
@@ -55,7 +55,7 @@ body { margin: 0; font-family: 'Rubik', sans-serif;background-color: #F6F5F7;}
   border:solid 1px var(--main-dark-color);
 }
 .btn-main-outline{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
   color:var(--main-color);
   background-color: var(--main-light-color);
   border:solid 1px var(--main-light-color) !important;
@@ -87,7 +87,7 @@ mat-label,
 button.mat-menu-item,
 .mat-input-element,
 .mat-tab-label-content{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .plain-card{
   border: none;
