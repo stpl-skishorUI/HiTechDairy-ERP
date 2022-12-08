@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.146" y1="0.146" x2="0.854" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fae100"/>
+      <stop offset="0.15" stop-color="#fcb720"/>
+      <stop offset="0.3" stop-color="#ff7950"/>
+      <stop offset="0.5" stop-color="#ff1c74"/>
+      <stop offset="1" stop-color="#6c1cd1"/>
+    </linearGradient>
+  </defs>
+  <g id="Instagram" transform="translate(-345 -4032)">
+    <circle id="Ellipse_773" data-name="Ellipse 773" cx="14" cy="14" r="14" transform="translate(345 4032)" fill="#154171"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(350 4037)">
+      <g id="Circle" transform="translate(0 0)">
+        <g id="_03.Instagram" data-name="03.Instagram" transform="translate(0 0)">
+          <rect id="Background" width="18" height="18" rx="9" fill="url(#linear-gradient)"/>
+          <g id="Group_14219" data-name="Group 14219" transform="translate(0.002)">
+            <path id="Shade" d="M15.724,3.067a31.959,31.959,0,0,1-5.464,7.183A32,32,0,0,1,3.081,15.71q-.225-.2-.438-.408A8.963,8.963,0,1,1,15.317,2.625q.211.214.407.442Z" transform="translate(-0.016 0)" fill="#fff" opacity="0.1"/>
+            <g id="Icon" transform="translate(4.244 4.246)">
+              <path id="Path_23139" data-name="Path 23139" d="M42.841,36H38.595A2.6,2.6,0,0,0,36,38.595v4.246a2.6,2.6,0,0,0,2.595,2.595h4.246a2.6,2.6,0,0,0,2.595-2.595V38.595A2.6,2.6,0,0,0,42.841,36Zm1.769,6.468a2.142,2.142,0,0,1-2.142,2.142h-3.5a2.142,2.142,0,0,1-2.142-2.142v-3.5a2.142,2.142,0,0,1,2.142-2.142h3.5a2.142,2.142,0,0,1,2.142,2.142Z" transform="translate(-36 -36)" fill="#fff"/>
+              <path id="Path_23140" data-name="Path 23140" d="M59.744,56.065l-.022-.022-.019-.019a2.378,2.378,0,0,0-1.68-.694,2.42,2.42,0,0,0-2.4,2.438,2.447,2.447,0,0,0,.708,1.723,2.381,2.381,0,0,0,1.7.708,2.445,2.445,0,0,0,1.716-4.134Zm-1.721,3.3a1.6,1.6,0,1,1,1.577-1.6A1.6,1.6,0,0,1,58.023,59.367Z" transform="translate(-53.305 -53.05)" fill="#fff"/>
+              <path id="Path_23141" data-name="Path 23141" d="M93.884,50.058a.576.576,0,0,1-.572.58.567.567,0,0,1-.4-.169.581.581,0,0,1,.4-.99.569.569,0,0,1,.365.132l.012.012a.359.359,0,0,1,.052.052l.013.014a.58.58,0,0,1,.13.368Z" transform="translate(-86.049 -47.89)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

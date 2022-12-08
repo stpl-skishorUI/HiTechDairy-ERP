@@ -1,7 +1,6 @@
 footer{ 
     background-image: url('../../../../assets/images/section-bg.png');
     background-size: cover;
-    padding-block: 3rem;
     font-family: 'Inter', sans-serif; 
     color: #fff;
 }
@@ -12,7 +11,11 @@ footer .logo{
 footer .footer-text{ 
    color: #fff;
    font-size: 0.85rem;
-   margin-bottom: 1rem;
+   margin-bottom: 1.5rem;
+}
+footer .bottom-text{ 
+   color: #fff;
+   font-size: 0.75rem;
 }
 footer .social-icon{ 
    width: 40px;
@@ -31,6 +34,48 @@ footer .footer-links a{
 footer .form-control,
 footer .btn-subscribe{ 
    border-radius: 40px;
-   padding: 20px 35px;
+   padding: 15px 35px;
    font-size: 0.85rem;
+}
+#footer-contact{
+   position: absolute;
+   left:0;
+   right:0;
+   top:-90px;
+   background-color: var(--main-dark-color);
+}
+#footer-contact i{
+   background-color: var(--main-color);
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50%;
+}
+#footer-contact h6{
+   font-size: 0.95rem;
+   margin-bottom: 5px;
+}
+#footer-contact p{
+   font-size: 0.75rem;
+   margin-bottom: 0;
+}
+@media screen and (max-width: 420px){
+   #footer-contact{
+      position: static;
+      padding: 0;
+      margin-top: 1rem;
+      background-color: transparent;
+      border-bottom: solid 1px #fff;
+   }
+   #footer-contact i{
+      background-color:transparent;
+      margin-right: 10px;
+      font-size:0.75rem ;
+      height:auto;
+      width:auto;
+   }
+   footer .footer-links{ 
+      margin-bottom: 1.3rem;
+   }
 }
