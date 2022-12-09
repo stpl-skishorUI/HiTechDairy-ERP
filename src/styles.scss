@@ -203,8 +203,25 @@ button.mat-menu-item {
 #page-header .breadcrumb-item+.breadcrumb-item::before {
   color: #fff;
 }
-
-
+.section-main{
+  padding-block: 3rem;
+}
+.section-main .section-subhead{
+  font-weight: 900;
+  color: var(--main-dark-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+.section-main p{
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+}
+@media screen and (max-width: 420px){
+  #page-header {
+    height: 22vh;
+  }
+}
 
 
 
