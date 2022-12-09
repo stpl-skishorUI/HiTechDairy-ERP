@@ -60,6 +60,10 @@ footer .btn-subscribe{
    font-size: 0.75rem;
    margin-bottom: 0;
 }
+#footer-contact p a{
+   color: #fff;
+   text-decoration: none;
+}
 @media screen and (max-width: 420px){
    #footer-contact{
       position: static;
