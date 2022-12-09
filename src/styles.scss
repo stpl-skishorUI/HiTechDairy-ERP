@@ -217,7 +217,11 @@ button.mat-menu-item {
   margin-bottom: 1rem;
   line-height: 1.8rem;
 }
-
+@media screen and (max-width: 420px){
+  #page-header {
+    height: 22vh;
+  }
+}
 
 
 
