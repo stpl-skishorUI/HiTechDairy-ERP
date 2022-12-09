@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'asset-management', loadChildren: () => import('../../web/services/asset-management/asset-management.module').then(m => m.AssetManagementModule), data: { title: 'Asset Management' }, },
   { path: 'inventory-management', loadChildren: () => import('../../web/services/inventory-management/inventory-management.module').then(m => m.InventoryManagementModule), data: { title: 'Inventory Module' }, },
   { path: 'sales-distribution', loadChildren: () => import('../../web/services/sales-distribution/sales-distribution.module').then(m => m.SalesDistributionModule), data: { title: 'Sales Distribution' }, },
-  { path: 'hrms', loadChildren: () => import('../../web/services/hrms/hrms.module').then(m => m.HrmsModule), data: { title: 'HRMS' }, },
+  { path: 'human-resource-management-system', loadChildren: () => import('../../web/services/hrms/hrms.module').then(m => m.HrmsModule), data: { title: 'HRMS' }, },
   { path: 'finance-accounting', loadChildren: () => import('../../web/services/finance-accounting/finance-accounting.module').then(m => m.FinanceAccountingModule), data: { title: 'Finance Accounting' }, },
   { path: 'field-force-tracking', loadChildren: () => import('../../web/services/field-force-tracking/field-force-tracking.module').then(m => m.FieldForceTrackingModule), data: { title: 'Field Force Tracking' }, },
   { path: 'vehicle-tracking-system', loadChildren: () => import('../../web/services/vehicle-tracking-system/vehicle-tracking-system.module').then(m => m.VehicleTrackingSystemModule), data: { title: 'Vehicle Tracking System' }, },
