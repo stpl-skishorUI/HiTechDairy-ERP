@@ -1,0 +1,10 @@
+#clientele .card{
+    text-align: center;
+    font-size: 1.2rem;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+#clientele .card:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
