@@ -348,13 +348,14 @@ section#products{
     box-shadow: none;
     border-radius: 50%;
 }
-#GetAQuoteModal .form-control{
+#GetAQuoteModal .form-control,
+#GetAQuoteModal .form-select{
     box-shadow: none;
     border-radius: 30px;
     font-size: 0.85rem;
     padding: 10px 20px;
 }
 #GetAQuoteModal .modal-dialog{
-    margin-right: 3%;
-    margin-top: 10%;
+    margin-right: 4%;
+    margin-top: 5%;
 }
