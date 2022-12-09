@@ -14,8 +14,9 @@
         </div>
     </div>
 </header>
+<section class="section-main">
 <div class="container">
-    <div class="row my-3">
+    <div class="row my-3" id="product-details">
         <div class="col-sm-12">
             <div class="row mb-4">
                 <div class="col-sm-8">
@@ -39,21 +40,27 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <h6>Dairy Supervisor</h6>
-                    <ul>
-                        <li>Automatic milk collection unit </li>
-                        <li>Route Manager</li>
-                        <li>Dairy Supervisor</li>
-                        <li>e-Anifarm Mobile Application</li>
-                        <li>e-Anifarm Desktop</li>
-                        <li>e-Vet Mobile</li>
-                        <li>Procurement Web Panel</li>
-                        <li>e-Processor</li>
-                        <li>POS (Counter sale)</li>
-                    </ul>
+                    <div class="card">
+                        <div class="card-header bg-transparent fw-bold border-bottom-0">
+                            Our Products
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a routerLink="/daily-supervisor" class="list-group-item list-group-item-action active" aria-current="true">Daily
+                                Supervisor</a>
+                            <a routerLink="/automatic-milk-collection-unit" class="list-group-item list-group-item-action ">Automatic Milk Collection Unit</a>
+                            <a routerLink="/route-manager" class="list-group-item list-group-item-action">Route Manager</a>
+                            <a routerLink="/e-anifarm-mobile-app" class="list-group-item list-group-item-action">e-Anifarm Mobile Application</a>
+                            <a routerLink="/e-anifarm-desktop" class="list-group-item list-group-item-action">e-Anifarm Desktop</a>
+                            <a  routerLink="/e-vet-mobile" class="list-group-item list-group-item-action">e-Vet Mobile</a>
+                            <a  routerLink="/procurement-web-panel" class="list-group-item list-group-item-action">Procurement Web Panel</a>
+                            <a routerLink="/e-processor" class="list-group-item list-group-item-action">e-Processor</a>
+                            <a routerLink="/pos" class="list-group-item list-group-item-action">POS (Counter sale)</a>
+                        </div>
+                    </div>
                 </div>
             </div>
            
         </div>
     </div>
 </div>
+</section>
