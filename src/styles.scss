@@ -217,6 +217,10 @@ button.mat-menu-item {
   margin-bottom: 1rem;
   line-height: 1.8rem;
 }
+.section-main ul{
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+}
 @media screen and (max-width: 420px){
   #page-header {
     height: 22vh;
@@ -279,7 +283,22 @@ button.mat-menu-item {
   border: none;
   background-color:transparent;
 }
-
+#product-details img{
+  margin-bottom: 1rem;
+}
+#product-details h3{
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+#product-details .list-group-item{
+  font-size: 0.85rem;
+}
+#product-details .list-group-item:hover,
+#product-details .list-group-item.active,
+#product-details .list-group-item:active{
+  background-color:var(--main-color);
+  color: #fff;
+}
 
 
 
