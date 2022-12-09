@@ -1,11 +1,11 @@
 header {
-    height: 92vh;
+    height: 90vh;
     background-color: var(--main-color);
     background-image: url('../../../assets/images/home/header-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    padding-block: 5rem;
+    padding-block: 3rem;
 }
 
 header #header-right {
@@ -309,5 +309,21 @@ section#products{
 
     #clients p {
         font-size: 0.85rem;
+    }
+    #features #features-left{
+        padding: 2rem;
+    }
+    #features #features-left h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #features #features-left ul li{
+        font-size: 0.85rem;
+        line-height: 1.7rem;
+        padding-bottom: 1rem;
+    }
+    #products .product-name,
+    #products .product-descri{
+        text-align: center;
     }
 }
