@@ -6,8 +6,14 @@ header {
     background-size: contain;
     background-position: bottom;
     padding-block: 3rem;
+    position: relative;
 }
-
+.get-a-quote{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
 header #header-right {
     color: #fff;
 }
@@ -220,6 +226,8 @@ section#products{
     padding-block:3rem;
     background-image: url('../../../assets/images/section-bg.png');
     color:#fff;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #products .product-name{
@@ -326,4 +334,27 @@ section#products{
     #products .product-descri{
         text-align: center;
     }
+    .get-a-quote{
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .get-a-quote img{
+        width: 40px;
+    }
+}
+#GetAQuoteModal .btn-close{
+    box-shadow: none;
+    border-radius: 50%;
+}
+#GetAQuoteModal .form-control{
+    box-shadow: none;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+}
+#GetAQuoteModal .modal-dialog{
+    margin-right: 3%;
+    margin-top: 10%;
 }
