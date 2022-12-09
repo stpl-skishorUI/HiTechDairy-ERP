@@ -3,7 +3,7 @@
 @import './assets/css/MaterialStyleSheet.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Inter', sans-serif;background-color: #F6F5F7;}
+body { margin: 0; font-family: 'Inter', sans-serif !important;background-color: #F6F5F7;}
 .page-wrapper.toggled .sidebar {
   left: -300px;
 }

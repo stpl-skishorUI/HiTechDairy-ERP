@@ -1,8 +1,313 @@
-header{ 
-    height: 100vh;
-    background-color:var(--main-dark-color);
-    background-image: url(../../../assets/images/home/header-bg.svg);
+header {
+    height: 92vh;
+    background-color: var(--main-color);
+    background-image: url('../../../assets/images/home/header-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+    padding-block: 5rem;
+}
+
+header #header-right {
+    color: #fff;
+}
+
+header #header-right h3 {
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    font-weight: 900;
+    line-height: 1.6rem;
+}
+
+header #header-right h1 {
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+
+header #header-right p {
+    margin-bottom: 3rem;
+}
+
+.btn-started {
+    padding: 15px 35px;
+    font-size: 0.85rem;
+    margin-right: 15px;
+}
+
+header #header-right .btn-play {
+    border-radius: 50%;
+    height: 52.4px;
+    line-height: 52.4px;
+    width: 52.4px;
+    border: 0.7px solid #FFFFFF;
+    color: #fff;
+    animation: ripple 1.5s linear infinite;
+    transition: all 0.7s ease;
+    margin-right: 15px;
+}
+
+header #header-right .btn-play:hover {
+    transform: scale(1.1);
+}
+
+header #header-right .btn-play:focus {
+    outline: none;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.3), 0 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 4px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+}
+
+section#aboutus {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#aboutus h6 {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+#aboutus h1 {
+    text-transform: uppercase;
+    color: var(--main-dark-color);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#aboutus p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: #555;
+}
+
+section#clients {
+    padding-block: 3rem;
+}
+
+#clients .card-body {
+    text-align: center;
+}
+
+#clients img {
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    filter: grayscale(1);
+}
+
+#clients img:hover {
+    filter: grayscale(0);
+}
+
+#clients p {
+    margin-bottom: 0;
+    color: var(--main-color);
+}
+
+#features #features-left {
+    padding-top: 3rem;
+    padding-left: 7rem;
+    background-color: var(--main-color);
+}
+
+#features #features-left h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#features #features-left ul {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    columns: 2;
+    position: relative;
+}
+
+#features #features-left ul li {
+   line-height: 3rem;
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+#features #features-left ul li::before {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: -5px;
+    top: 1px;
+    width: 10px;
+    height: 10px;
+    color: var(--main-dark-color);
+}
+section#testimonials{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+#testimonials .small-heading{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+#testimonials .testi-descri{
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+#testimonials h1{
+    text-transform: uppercase;
+    color: var(--main-dark-color);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+#testimonials .card{
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    text-align: center;
+    color: #fff;
+}
+#testimonials .card img{
+    border-radius: 50%;
+    width: 60px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+#testimonials .card h5{
+    font-size: 1rem;
+}
+#testimonials .card h6{
+    font-size: 0.85rem;
+}
+#testimonials .card p{
+    font-size: 0.8rem;
+}
+#TestimonialCarousel .carousel-control-prev,
+#TestimonialCarousel .carousel-control-next{
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    background-color: var(--main-dark-color);
+}
+#products .carousel-indicators,
+#TestimonialCarousel .carousel-indicators{
+    bottom: -50px;
+}
+#products .carousel-indicators button,
+#TestimonialCarousel .carousel-indicators button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--main-light-color);
+}
+#products .carousel-indicators button.active,
+#TestimonialCarousel .carousel-indicators button.active{
+   background-color: var(--main-color);
+}
+section#products{
+    padding-block:3rem;
+    background-image: url('../../../assets/images/section-bg.png');
+    color:#fff;
+}
+
+#products .product-name{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#products .product-descri{
+    font-size: 0.85rem;
+}
+#products .carousel-control-prev,
+#products .carousel-control-next{
+    width: 40px;
+    height: 40px;
+    top: 40%;
+    background-color: var(--main-dark-color);
+}
+
+
+
+
+
+@media screen and (max-width:420px) {
+    header {
+        height: auto;
+        background-color: var(--main-color);
+        background-image: url('../../../assets/images/home/header-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 140%;
+        background-position: bottom;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    header #header-right h3 {
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        font-weight: 900;
+        line-height: 1.6rem;
+        text-align: center;
+    }
+
+    header #header-right h1 {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    header #header-right p {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    section#aboutus {
+        padding-block: 2rem;
+    }
+
+    #aboutus h6 {
+        text-transform: uppercase;
+        color: var(--main-color);
+        text-align: center;
+    }
+
+    #aboutus h1 {
+        text-transform: uppercase;
+        color: var(--main-dark-color);
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    #aboutus p {
+        font-size: 0.85rem;
+        line-height: 1.7rem;
+        color: #555;
+        text-align: center;
+    }
+
+    #clients img {
+        height: 100px;
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        filter: grayscale(1);
+    }
+
+    #clients p {
+        font-size: 0.85rem;
+    }
 }
